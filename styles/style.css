@@ -1,0 +1,702 @@
+
+/*AQUI EMPIEZA LA PERSONALIZACION*/
+*{
+    margin: 0;
+    padding: 0;
+    
+
+    
+}
+h1 ,h2,h3{
+    font-family: "Montserrat", sans-serif;
+}
+p{
+    font-family:  "Roboto", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+/*HEADER + MENU----------------------------------------------------------------------------------------------*/
+header{
+    background-color: rgb(174, 255, 143);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 1em;
+    gap: 1rem;
+    border: 3px solid black;
+    
+}
+.img_logo{
+    width: 25%;
+    
+   
+}
+.img_logo img{
+  width: 100%;
+  height: auto;
+}
+.menu{
+    font-family: "Montserrat", sans-serif;
+    margin-inline: 1rem;
+    display: flex;
+    justify-content: end;
+
+    padding: 1em;
+}
+.menu li{
+    list-style: none;
+   padding: 1rem;
+   margin-left: 1rem;
+   
+    
+}
+.menu a{
+    
+    font-size: 15px;
+    color: black;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.menu a:hover{
+    background-color: rgb(87, 175, 0);
+    color: rgb(255, 255, 255);
+    padding: 1em;
+  
+    border-radius: 1em;
+  
+
+}
+.menu a:focus{
+    outline: 2px solid #021829; /* marca con un borde externo visible */
+  background-color: rgb(248, 170, 0);
+  color: black;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+
+
+
+
+/*MAIN -------------- footer---------------------------------------------------------------------------*/
+footer {
+  background-color: rgb(158, 255, 119);
+  color: rgb(0, 0, 0);
+  padding: 2rem 1rem;
+  border-top: 2px solid #000;
+}
+.conte_footer{
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  border-radius: 22px;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0);
+}
+
+.redes{
+    text-align: center;
+    width: 60%;
+    padding: 2em;
+    margin-left: 200px;
+  
+}
+.ubicacion{
+    text-align: center;
+    width: 60%;
+    padding: 2em;
+    margin-right: 200px;
+}
+
+.redes h3, .ubicacion h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  margin-bottom: 0.5em;
+}
+
+.redes ul {
+  list-style: none;
+  padding: 0;
+}
+
+.redes li {
+    margin: 22px;
+}
+
+.redes a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  font-family: "Roboto", sans-serif;
+}
+
+.redes a:hover {
+  background-color: rgb(34, 128, 0);
+  color:  white;
+  padding: 0.4em;
+  border-radius: 0.5em;
+}
+
+.ubicacion address {
+ 
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.end_footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em;
+ 
+}
+.parrafo_f p {
+
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+}
+.footer_logo{
+
+    width: 200px;
+}
+.footer_logo img{
+    width: 100%;
+}
+
+
+
+/*MAIN  contenido principal DE INDEX------------------------------------------------------------------------------------*/
+
+/* Contenedor principal */
+
+/* Sección destacada (amarilla) */
+
+/* Título principal */
+ h1 {
+    font-size: 2.5rem;
+    width: 100%;
+    padding: 1em;
+}
+
+/* Contenido dividido en texto e imagen */
+
+/* Contenido textual del inicio */
+.contenido h2 {
+
+    width: 90%;
+    border-radius: 22px;
+    padding: 1em;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    box-shadow: 0px 4px 10px #000;
+}
+
+.contenido h3 {
+    font-size: 1.3rem;
+    color:  black;
+    padding: 0.75rem;
+    margin-top: 1em;
+    
+}
+
+.contenido p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 1rem;
+    border-radius: 10px;
+     
+}
+
+.container{
+  padding: 1em;
+
+}
+.row {
+  background-color: rgb(196, 255, 173);
+  padding: 2rem;
+  border-radius: 22px;
+  box-shadow: 0px 4px 10px #000;
+
+  
+}
+.col-7{
+  padding: 1rem;
+  border-radius: 1em;
+
+}
+.col-5{
+  padding: 1em;
+  justify-items: center;
+
+}
+
+
+/* Imagen */
+.img {
+    width: 90%;
+    background-color: #0f0f0f;
+    border-radius: 22px;
+  
+}
+.img img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Sección inferior con info dividida */
+
+/* Cada bloque de servicio */
+
+
+
+.info_servicio h2 {
+    font-size: 1.5rem;
+    color:  black;
+    padding: 0.75rem;
+    border-radius: 22px;
+    margin-bottom: 1rem;
+}
+
+.info_servicio p {
+  padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+     border-radius: 17px;
+     box-shadow: 0px 4px 10px #000;
+}
+
+.info_servicio .list ul {
+
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 17px;
+    
+}
+
+.info_servicio .list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+.img_servicioa{
+  width: 80%;
+}
+.img_servicioa figure {
+  width: 100%;
+
+}
+.img_servicioa img{
+  width: 100%;
+}
+
+
+
+
+
+
+/*CONTENIDO PRINCIPAL DE SERVICIOs--------------------------------------------------------------------------------------*/
+
+.contenedor_s{
+    padding: 2rem 0;
+    min-height: 200px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   
+}
+.contenedor_s h1 {
+     width: 90%;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 1em;
+}
+
+/*SECTION 1*/
+.intro_servicios{
+    width: 90%;
+    padding: 2em;
+    background-color: rgb(250, 173, 8);
+    border:  5px solid rgb(185, 127, 0);
+    border-radius: 22px;
+    margin: 18px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.tiutlo_contenedor{
+    margin: 50px;
+    padding: 2em;
+    background-color: rgb(250, 186, 8);
+    border-radius: 22px;
+}
+.tiutlo_contenedor h2{
+    text-align: left;
+    padding: 0.5em;
+    font-size: 30px;
+    margin: 5px;
+
+}
+.tiutlo_contenedor p {
+ font-size: 20px;
+    padding: 1em;
+}
+.img_servicios{
+    background-color: rgb(250, 186, 8);
+    border-radius: 22px;
+    width: 100%;
+    padding: 1em;
+}
+.img_servicios img{
+      
+        width: 100%;
+        border-radius: 22px;
+}
+
+/*SECTION 2*/
+.bloque_servicios{
+    
+    max-width: 1300px;
+    padding: 2em;
+    background-color: rgb(250, 173, 8);
+    border: 5px solid rgb(70, 48, 0);
+    border-radius: 22px;
+}
+.bloque_servicios h2{
+    
+    background-color: rgb(250, 186, 8);
+      text-align: center;
+    padding: 1em;
+    font-size: 30px;
+    margin-bottom: 1em;
+    border-radius: 22px;
+}
+.cont_card{
+    padding: 1em;
+    background-color: rgb(250, 186, 8);
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 22px;
+}
+.servicio{
+    width: 100%;
+    max-width: 380px;
+    flex: 1 1 300px;
+    background-color: rgb(250, 186, 8);
+    padding: 2em;
+    border: 2px solid black;
+    margin: 22px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+.servicio h3 {
+    text-align: center;
+    font-size: 22px;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border-radius: 22px;
+}
+.servicio p {
+    text-align: center;
+    background-color: white;
+    margin: 22px;
+    font-size: 19px;
+    padding: 1em;
+    border: 2px solid black;
+}
+.metodologias{
+    width: 93%;
+    padding: 3em;
+    margin: 22px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     background-color: rgb(250, 173, 8);
+    border: 5px solid rgb(70, 48, 0);
+    border-radius: 22px;
+   
+    gap: 22px;
+}
+.meto_info{
+     background-color: rgb(250, 186, 8);
+    padding: 3em;
+    border-radius: 22px;
+    
+}
+.meto_info h2 {
+    text-align: left;
+    background-color: rgb(190, 156, 1);
+    font-size: 28px;
+    padding: 1em;
+    border-radius: 22px;
+}
+.meto_info p {
+    padding: 1em;
+    font-size: 22px;
+}
+.meto_info .list2{
+    padding: 0.5em; 
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+}
+.list2 li{
+    padding: 0.5em;
+}
+.list2 a{
+    font-size: 22px;
+
+}
+.meto_info a{
+  padding: 0.3em;
+
+  color: rgb(68, 0, 255);
+  font-size: 18px;
+  transition: all 0.3s ease;
+  font-family: "Roboto", sans-serif;
+}
+.meto_info a:hover{
+ background-color: rgb(180, 123, 0);
+  color:  white;
+  border-radius: 0.5em;
+}
+
+
+
+
+
+
+
+.contenedor_n {
+  background-color: #ffffff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Título principal */
+.contenedor_n h1 {
+  width: 100%;
+  max-width: 1000px;
+  font-size: 2rem;
+  color: #000;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px #000;
+  text-align: center;
+}
+
+/* Info principal */
+.n_info {
+  width: 100%;
+  background-color: rgb(196, 255, 173);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Artículo dentro de info */
+.art_ninfo {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgb(196, 255, 173);
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px #000;
+}
+
+.n_info h2 {
+  font-size: 1.75rem;
+  color: black;
+  margin-bottom: 1rem;
+  padding: 0.5em;
+}
+
+.n_info p {
+  font-size: 1.125rem;
+  color: black;
+  padding: 0.5em;
+}
+
+/* Misión / visión en cards */
+.mision_info {
+  width: 100%;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: rgb(196, 255, 173);
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.m_card {
+  background-color: rgb(202, 255, 182);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px #000;
+}
+
+.m_card h3 {
+    text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 10px 2px 2px rgb(21, 54, 0);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.m_card p {
+  font-size: 1.125rem;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.m_card ul {
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.m_card li {
+  padding: 0.5rem 0;
+}
+
+
+
+/*img EQUIPO*/
+
+.img_equipo{
+  background-color: rgb(196, 255, 173);
+  width: 100%;
+  max-width: 1500px;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.img_equipo article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    justify-items: center;
+    border-radius: 22px;
+
+}
+.img_equipo figure{
+    width: 70%;
+    margin: 22px;
+    box-shadow: 0px 5px 4px 3px rgb(4, 22, 0);
+    background-color: black;
+    border-radius: 22px;
+}
+.img_equipo figure img{
+    width: 100%;
+     border-radius: 22px;
+}
+.img_equipo div {
+    text-align: center;
+    width: 100%;
+    padding: 2em;
+    margin: 4px;
+}
+.img_equipo div p {
+     font-size: 1.125rem;
+     
+}
+
+
+/* Info equipo */
+.m_equipo {
+  width: 100%;
+  max-width: 1500px;
+  padding: 2rem;
+  background-color: rgb(176, 255, 145);
+  border: 2px solid black;
+  border-radius: 1rem;
+}
+
+.cont_equipo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.art_equipo {
+  background-color: rgb(196, 255, 173);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 4px 10px #000;
+}
+
+.art_equipo h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.art_equipo p {
+  font-size: 1.125rem;
+  padding: 0.2em;
+}
+
+/* Final */
+.p_final {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto 0 auto;
+  background-color: transparent;
+}
+.p_final h2 {
+    text-align: center;
+    width: 100%;
+    padding: 1em;
+}
+
+.p_final p {
+  background-color: rgb(196, 255, 173);
+  padding: 2rem;
+  font-size: 1.125rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px #000;
+}
+
+.p_final a {
+  color: rgb(68, 0, 255);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+
+.p_final a:hover {
+  background-color: rgb(24, 86, 0);
+  color: white;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
