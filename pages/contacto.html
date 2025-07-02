@@ -5,65 +5,129 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Roldan Valentin">
   <link rel="stylesheet" href="../styles/style.css">
+    <!--CDN de boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <title>Contacto</title>
 </head>
 <body>
-  <header>
-    <div class="img_logo">
-      <img src="../img/logo2.png" alt="logo de Qhantux">
-    </div>
-    <nav class="nav">
-      <ul class="menu">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="clientes.html">Clientes</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+
+
+
+  <!--Header + nav-->
+<header class="custom-header navbar navbar-expand-lg">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+
+                  <!-- LOGO -->
+                  <div class="img_logo">
+                        <img src="../img/logo2.png" alt="logo de Qhantux" class="img-fluid">
+                  </div>
+                  <!-- BOTÓN HAMBURGUESA -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCustom" aria-controls="menuCustom" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <!-- MENÚ -->
+                  <div class="collapse navbar-collapse justify-content-end" id="menuCustom">
+                        <ul class="navbar-nav menu">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                  </div>
+      </div>
+</header>
+
+
 
 <main>
-  <section class="contenedor">
-    <h1>Contacto</h1>
-    <p>¿Querés impulsar tu transformación digital? Estamos listos para escucharte. Completá el formulario y te responderemos a la brevedad.</p>
 
-      <section class="beneficios_contacto">
-      <h2>¿Por qué hablar con nosotros?</h2>
-      <ul>
-        <li>✅ Te asesoramos sin compromiso: escuchamos tu necesidad y te orientamos.</li>
-        <li>⚙️ Soluciones reales, pensadas para tu contexto, no fórmulas genéricas.</li>
-        <li>🤝 Trato humano, claro y cercano. Hablás con personas, no con bots.</li>
-        <li>📈 Experiencia comprobada en múltiples rubros, desde PyMEs hasta grandes empresas.</li>
-        <li>🌱 Creemos en la tecnología que transforma sin excluir.</li>
-      </ul>
-    </section>
+      <section class="container my-5 contenedor_contact">
+                <div class="row mb-4">
+                        <div class="col  h1-p-contacto">
+                            <h1>Contacto</h1>
+                            <p>
+                              ¿Querés impulsar tu transformación digital? Estamos listos para escucharte.
+                              Completá el formulario y te responderemos a la brevedad.
+                            </p>
+                      </div>
+                </div>
 
-    <form action="#" method="post" class="formulario_contacto">
-      <label for="nombre">Nombre y apellido:</label>
-      <input type="text" id="nombre" name="nombre" required>
+                <div class="row mb-5">
+                    <div class="col cont-beneficios-contacto">
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" required>
+                        <section class="beneficios_contacto">
+                              <h2>¿Por qué hablar con nosotros?</h2>
+                              <ul class="list-unstyled lista_contacto">
+                                  <li>✅ Te asesoramos sin compromiso: escuchamos tu necesidad y te orientamos.</li>
+                                  <li>⚙️ Soluciones reales, pensadas para tu contexto, no fórmulas genéricas.</li>
+                                  <li>🤝 Trato humano, claro y cercano. Hablás con personas, no con bots.</li>
+                                  <li>📈 Experiencia comprobada en múltiples rubros, desde PyMEs hasta grandes empresas.</li>
+                                  <li>🌱 Creemos en la tecnología que transforma sin excluir.</li>
+                              </ul>
+                      </section>
 
-      <label for="empresa">Empresa (opcional):</label>
-      <input type="text" id="empresa" name="empresa">
+                  </div>
+                </div>
 
-      <label for="mensaje">Mensaje:</label>
-      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <div class="row justify-content-center mb-5">
+                  <div class="col-lg-8 ">
+                    <form action="#" method="post" class=" p-4 formulario_contacto bg-light">
+                          <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre y apellido:</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required>
+                          </div>
 
-      <button type="submit">Enviar mensaje</button>
-    </form>
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                          </div>
 
-    <section class="contacto_whatsapp">
-      <p>¿Preferís algo más directo? También podés contactarnos por WhatsApp:</p>
-      <a href="https://wa.me/541145678900" target="_blank">📱 Escribinos al +54 11 4567-8900</a>
-    </section>
-    <section class="frase_contacto_final">
-      <p>No importa si estás dando los primeros pasos o si buscás optimizar procesos complejos. En Qhantux, te ayudamos a lograrlo. Contactanos y construyamos juntos el futuro digital de tu empresa.</p>
-    </section>
-  </section>
+                          <div class="mb-3">
+                            <label for="empresa" class="form-label">Empresa (opcional):</label>
+                            <input type="text" class="form-control" id="empresa" name="empresa">
+                          </div>
+
+                          <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje:</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                          </div>
+
+                          <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+                    </form>
+                  </div>
+                </div>
+
+                <div class="row mb-4">
+                  <div class="col">
+                      <section class="contacto_whatsapp">
+                        <p>¿Preferís algo más directo? También podés contactarnos por WhatsApp:</p>
+                        <a href="https://wa.me/541145678900" target="_blank" class="btn btn-success">
+                          📱 Escribinos al +54 11 4567-8900
+                        </a>
+                      </section>
+                  </div>
+                  <div class="col">
+                    <section class="frase_c_final">
+                      <p>
+                        No importa si estás dando los primeros pasos o si buscás optimizar procesos complejos.
+                        En Qhantux, te ayudamos a lograrlo. Contactanos y construyamos juntos el futuro digital de tu empresa.
+                      </p>
+                    </section>
+                  </div>
+                  
+                </div>
+
+      </section>
+            
+   
+     
 </main>
+
+
 
 <footer>
         <div class="conte_footer">
@@ -101,6 +165,7 @@
 
         
 </footer>
-
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+ integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

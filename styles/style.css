@@ -19,66 +19,86 @@ p{
 
 
 
+
+
+
 /*HEADER + MENU----------------------------------------------------------------------------------------------*/
-header{
-    background-color: rgb(174, 255, 143);
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    padding: 1em;
-    gap: 1rem;
-    border: 3px solid black;
-    
+.custom-header {
+  background-color: rgb(174, 255, 143);
+  padding: 2rem; 
+  border: 2px solid black;
 }
-.img_logo{
-    width: 25%;
-    
-   
+
+.img_logo {
+  width: 200px;
 }
-.img_logo img{
+
+.img_logo img {
   width: 100%;
   height: auto;
 }
-.menu{
-    font-family: "Montserrat", sans-serif;
-    margin-inline: 1rem;
-    display: flex;
-    justify-content: end;
 
-    padding: 1em;
+/* Menú personalizado */
+.menu {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding-left: 0;
+  margin-bottom: 0;
 }
-.menu li{
-    list-style: none;
-   padding: 1rem;
-   margin-left: 1rem;
-   
-    
-}
-.menu a{
-    
-    font-size: 15px;
-    color: black;
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-.menu a:hover{
-    background-color: rgb(87, 175, 0);
-    color: rgb(255, 255, 255);
-    padding: 1em;
-  
-    border-radius: 1em;
-  
 
+.menu li {
+  list-style: none;
 }
-.menu a:focus{
-    outline: 2px solid #021829; /* marca con un borde externo visible */
-  background-color: rgb(248, 170, 0);
+
+.menu a {
+  font-size: 1rem;
   color: black;
-  padding: 1em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: rgb(87, 175, 0);
+  color: white;
+  padding: 1rem;
   border-radius: 1em;
 }
 
+.menu a:focus {
+  outline: 2px solid #021829;
+  background-color: rgb(87, 175, 0);
+  color: black;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+}
 
+/* Mobile: menú vertical */
+@media (max-width: 990px) {
+  .img_logo {
+  width: 50%;
+}
+
+.img_logo img {
+  width: 100%;
+  height: auto;
+}
+.menu a{
+  font-size: 1.2rem;
+  padding: 0.5em;
+}
+.menu {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .nav-item{
+    width: 100%;
+  }
+}
 
 
 
@@ -175,26 +195,135 @@ footer {
 }
 
 
+/*Diseño mobile-------------------------*/
+
+@media screen and (max-width: 768px) {
+  .conte_footer {
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    padding: 1.5em;
+  }
+
+  .redes, .ubicacion {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em;
+  }
+
+  .redes h3, .ubicacion h3 {
+    font-size: 1.6rem;
+  }
+
+  .redes a {
+    font-size: 1.1rem;
+  }
+
+  .ubicacion address {
+    font-size: 1.1rem;
+  }
+
+  .redes li {
+    margin: 16px 0;
+  }
+
+  .end_footer {
+    flex-direction: column;
+    gap: 0.5em;
+    padding: 1em 0;
+  }
+
+  .parrafo_f p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .footer_logo {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    padding: 1rem 0.5rem;;
+  }
+
+  .conte_footer {
+    grid-template-columns: 1fr; /* 1 columna */
+    gap: 1em;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .redes,
+  .ubicacion {
+    width: 100%;
+    margin: 0;
+    padding: 1em 0.5em;
+  }
+
+  .redes h3,
+  .ubicacion h3 {
+    font-size: 20px;
+  }
+
+  .redes li {
+    margin: 12px 0;
+  }
+
+  .redes a {
+    font-size: 20px;
+  }
+
+  .ubicacion address {
+    font-size: 16px;
+  }
+
+  .end_footer {
+    margin-top: 22px;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5em;
+  }
+
+  .parrafo_f p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .footer_logo {
+    width: 180px;
+  }
+}
+/*aqui termina la personalizacion del footer---------*/
+
 
 /*MAIN  contenido principal DE INDEX------------------------------------------------------------------------------------*/
 
-/* Contenedor principal */
 
-/* Sección destacada (amarilla) */
-
-/* Título principal */
- h1 {
+.inicio_h1{
+    color: rgb(0, 2, 0);
+    padding: 2rem;
     font-size: 2.5rem;
     width: 100%;
     padding: 1em;
+    border-radius: 22px;
+}
+.cont-inicio{
+  background-color: rgb(196, 255, 173);
+  padding: 1rem;
+  border-radius: 22px;
+  border: solid 2px black;
 }
 
-/* Contenido dividido en texto e imagen */
-
-/* Contenido textual del inicio */
+.articulo-inicio{
+    padding: 1rem;
+    border-radius: 22px;
+    box-shadow: 1px 5px 10px black;
+   
+}
 .contenido h2 {
 
-    width: 90%;
+    width: 100%;
     border-radius: 22px;
     padding: 1em;
     font-size: 1.8rem;
@@ -203,7 +332,7 @@ footer {
 }
 
 .contenido h3 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color:  black;
     padding: 0.75rem;
     margin-top: 1em;
@@ -211,94 +340,246 @@ footer {
 }
 
 .contenido p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
     padding: 1rem;
     border-radius: 10px;
      
 }
 
-.container{
-  padding: 1em;
 
+.art-img-inicio{
+    justify-items: center;
 }
-.row {
-  background-color: rgb(196, 255, 173);
-  padding: 2rem;
-  border-radius: 22px;
-  box-shadow: 0px 4px 10px #000;
-
-  
-}
-.col-7{
-  padding: 1rem;
-  border-radius: 1em;
-
-}
-.col-5{
-  padding: 1em;
-  justify-items: center;
-
-}
-
-
 /* Imagen */
-.img {
+.art_img {
     width: 90%;
     background-color: #0f0f0f;
     border-radius: 22px;
   
 }
-.img img {
+.art_img img {
     width: 100%;
     border-radius: 10px;
-    object-fit: cover;
 }
 
-/* Sección inferior con info dividida */
 
-/* Cada bloque de servicio */
+
+/*cONTENIDO DE SERVICIO de IDEX*/
+.cont-servicio{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ padding: 2rem;
+ background-color: rgb(196, 255, 173);
+ border-radius: 22px;
+ border: solid 2px black;
+}
 
 
 
 .info_servicio h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color:  black;
-    padding: 0.75rem;
-    border-radius: 22px;
-    margin-bottom: 1rem;
-}
-
-.info_servicio p {
-  padding: 1rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-     border-radius: 17px;
-     box-shadow: 0px 4px 10px #000;
-}
-
-.info_servicio .list ul {
-
-    width: 90%;
     padding: 1rem;
-    font-size: 1rem;
-    border-radius: 17px;
-    
+    margin-bottom: 10px;
+}
+.info_servicio p{
+  padding: 1em;
+  font-size: 1.3rem;
 }
 
-.info_servicio .list li {
-    margin-bottom: 0.5rem;
+.list ul{
+  padding: 1em;
+  margin: 22px;
+}
+.list li {
+    margin-bottom: 1rem;
     line-height: 1.4;
 }
-.img_servicioa{
-  width: 80%;
+.img_servicio{
+  width: 50%;
+  justify-items: center;
 }
-.img_servicioa figure {
-  width: 100%;
+.img_servicio figure {
+  width: 90%;
+  
 
 }
-.img_servicioa img{
+.img_servicio img{
   width: 100%;
+  border-radius: 22px;
+  box-shadow: 0px 10px 10px black;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .inicio_h1 {
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .cont-inicio {
+    padding: 1.5rem;
+  }
+
+  .articulo-inicio {
+    padding: 1.5rem;
+  }
+
+  .contenido h2 {
+    font-size: 1.8rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contenido h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.6rem;
+  }
+
+  .contenido p {
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: justify;
+  }
+
+  .art-img-inicio {
+    justify-items: center;
+  }
+
+  .art_img {
+    width: 100%;
+  }
+
+  .art_img img {
+    border-radius: 14px;
+  }
+
+  .cont-servicio {
+    padding: 1.5rem;
+  }
+
+  .info_servicio h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .info_servicio p {
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-align: justify;
+  }
+
+  .list ul {
+    padding: 1rem;
+    margin: 16px;
+  }
+
+  .list li {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .img_servicio {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .img_servicio figure {
+    width: 100%;
+  }
+
+  .img_servicio img {
+    width: 100%;
+    border-radius: 18px;
+  }
+}
+
+
+/*Diseño mobile*/
+@media screen and (max-width: 480px) {
+  .inicio_h1 {
+    font-size: 1.8rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .cont-inicio {
+    padding: 1rem;
+  }
+
+  .articulo-inicio {
+    padding: 2rem;
+  }
+
+  .contenido h2 {
+    font-size: 1.7rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contenido h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .contenido p {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .art_img {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .art_img img {
+    border-radius: 12px;
+  }
+
+  .cont-servicio {
+    padding: 1rem;
+  }
+
+  .info_servicio h2 {
+    font-size: 1.7rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .info_servicio p {
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  .list ul {
+    margin: 10px;
+    padding: 1rem;
+  }
+
+  .list li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .img_servicio {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .img_servicio figure {
+    width: 100%;
+  }
+
+  .img_servicio img {
+    width: 100%;
+    border-radius: 16px;
+  }
 }
 
 
@@ -308,111 +589,129 @@ footer {
 
 /*CONTENIDO PRINCIPAL DE SERVICIOs--------------------------------------------------------------------------------------*/
 
+
+/*Diseño de escritorio*/
+
 .contenedor_s{
-    padding: 2rem 0;
-    min-height: 200px;
+    width: 100%;
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
    
 }
-.contenedor_s h1 {
-     width: 90%;
-    font-size: 30px;
-    background-color: black;
-    color: white;
-    padding: 1em;
+.intro_servicios h1 {
+     width: 100%;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px black;
+    
 }
 
 /*SECTION 1*/
 .intro_servicios{
-    width: 90%;
+    width: 95%;
     padding: 2em;
-    background-color: rgb(250, 173, 8);
-    border:  5px solid rgb(185, 127, 0);
+    background-color: rgb(196, 255, 173);
+    border: 2px solid black;
     border-radius: 22px;
-    margin: 18px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     justify-items: center;
     align-items: center;
+    margin-top: 20px;
 }
-.tiutlo_contenedor{
-    margin: 50px;
+.titulo_contenedor{
     padding: 2em;
-    background-color: rgb(250, 186, 8);
+    background-color: rgb(196, 255, 173);
     border-radius: 22px;
 }
-.tiutlo_contenedor h2{
-    text-align: left;
-    padding: 0.5em;
-    font-size: 30px;
+.titulo_contenedor h2{
+    padding: 1em;
+    font-size: 1.8rem;
     margin: 5px;
+    text-align: center;
+    
 
 }
-.tiutlo_contenedor p {
- font-size: 20px;
-    padding: 1em;
+.titulo_contenedor p {
+ font-size: 1.2rem;
+    padding: 2em;
+    border: 2px solid black;
+  
+}
+.c-img-servicios{
+  display: grid;
+  grid-template-columns: 1fr 1fr;;
+  justify-items: center;
 }
 .img_servicios{
-    background-color: rgb(250, 186, 8);
-    border-radius: 22px;
-    width: 100%;
-    padding: 1em;
+    width: 70%;
+ 
 }
-.img_servicios img{
-      
+.img_servicios img{    
         width: 100%;
         border-radius: 22px;
+        box-shadow: 0px 5px 10px black;
 }
+
+
+
+
 
 /*SECTION 2*/
 .bloque_servicios{
     
-    max-width: 1300px;
+    width: 90%;
     padding: 2em;
-    background-color: rgb(250, 173, 8);
-    border: 5px solid rgb(70, 48, 0);
+    background-color: rgb(196, 255, 173);
+    border: 2px solid black;
     border-radius: 22px;
+    justify-items: center;
+
 }
 .bloque_servicios h2{
+    width: 40%;
+    background-color: rgb(186, 255, 146);
+    text-align: center;
+    padding: 0.5em;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px black;
     
-    background-color: rgb(250, 186, 8);
-      text-align: center;
-    padding: 1em;
-    font-size: 30px;
-    margin-bottom: 1em;
-    border-radius: 22px;
 }
 .cont_card{
     padding: 1em;
-    background-color: rgb(250, 186, 8);
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
+    background-color: rgb(196, 255, 173);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    justify-content: space-around;
     border-radius: 22px;
+  
 }
 .servicio{
-    width: 100%;
-    max-width: 380px;
-    flex: 1 1 300px;
-    background-color: rgb(250, 186, 8);
-    padding: 2em;
-    border: 2px solid black;
-    margin: 22px;
-    border-radius: 50px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 95%;
+    background-color: rgb(196, 255, 173);
+    padding: 1em;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 10px #000;
 }
 .servicio h3 {
+    width: 100%;
     text-align: center;
-    font-size: 22px;
-    padding: 1em;
-    background-color: black;
-    color: white;
+    font-size: 18px;
+    background-color: rgb(10, 36, 0);
+    padding: 0.7em;
+    color: rgb(6, 192, 0);
     border-radius: 22px;
 }
 .servicio p {
@@ -420,30 +719,32 @@ footer {
     background-color: white;
     margin: 22px;
     font-size: 19px;
-    padding: 1em;
+    padding: 0.5em;
     border: 2px solid black;
 }
+/*SECCION DE METODOLOGIAS*/
 .metodologias{
-    width: 93%;
-    padding: 3em;
-    margin: 22px;
+    max-width: 1200px;
+    padding: 2em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-     background-color: rgb(250, 173, 8);
-    border: 5px solid rgb(70, 48, 0);
+    background-color: rgb(196, 255, 173);
+    border: 2px solid black;
     border-radius: 22px;
-   
-    gap: 22px;
+    gap: 20px;
+
 }
 .meto_info{
-     background-color: rgb(250, 186, 8);
+    background-color: rgb(196, 255, 173);
     padding: 3em;
     border-radius: 22px;
+    box-shadow: 0px 4px 10px #000;
     
 }
 .meto_info h2 {
     text-align: left;
-    background-color: rgb(190, 156, 1);
+    background-color: rgb(153, 250, 115);
+       color: rgb(0, 0, 0);    
     font-size: 28px;
     padding: 1em;
     border-radius: 22px;
@@ -473,43 +774,200 @@ footer {
   font-family: "Roboto", sans-serif;
 }
 .meto_info a:hover{
- background-color: rgb(180, 123, 0);
+ background-color: rgb(0, 255, 13);
   color:  white;
   border-radius: 0.5em;
 }
 
+/*Diseño mobile*/
+@media screen and (max-width: 768px) {
+  /* Intro servicios */
+  .intro_servicios {
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 2em;
+    gap: 10px;
+  }
+
+  .tiutlo_contenedor {
+    padding: 1em;
+    margin: 0;
+  }
+
+  .tiutlo_contenedor h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .tiutlo_contenedor p {
+    font-size: 16px;
+  }
+
+  .img_servicios {
+    padding: 1em;
+  }
+
+  /* Servicios cards */
+  .cont_card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 1em 0;
+  }
+
+  .servicio {
+    width: 90%;
+    font-size: 16px;
+    margin: 10px auto;
+  }
+
+  .servicio h3 {
+    font-size: 16px;
+  }
+
+  .servicio p {
+    font-size: 16px;
+    margin: 12px;
+  }
+
+  /* Metodologías */
+  .metodologias {
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
+
+  .meto_info {
+    padding: 1em;
+  }
+
+  .meto_info h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .meto_info p,
+  .list2 li,
+  .list2 a {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .contenedor_s h1 {
+    font-size: 25px;
+    padding: 1em;
+  
+  }
+
+  .intro_servicios {
+    padding: 1em;
+    gap: 15px;
+  }
+
+  .tiutlo_contenedor h2 {
+    width: 100%;
+    padding: 1em;
+    font-size: 1.8rem;
+  }
+
+  .tiutlo_contenedor p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .c-img-servicios{
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .img_servicios {
+    width: 100%;
+  }
+
+  .bloque_servicios{
+    width: 100%;
+  }
+  .bloque_servicios h2{
+    text-align: center;
+    width: 80%;
+  }
+  .cont_card {
+    padding: 0.5em 0;
+  }
+
+  .servicio {
+    width: 100%;
+    padding: 1.5em;
+  }
+
+  .servicio h3 {
+    font-size: 20px;
+    padding: 1em;
+  }
+
+  .servicio p {
+    font-size: 17px;
+    margin: 10px;
+    padding: 0.5em;
+  }
+
+  .metodologias {
+    padding: 1em 0.5em;
+    gap: 12px;
+  }
+
+  .meto_info {
+    padding: 1em;
+  }
+
+  .meto_info h2 {
+    font-size: 1.7rem;
+  }
+
+  .meto_info p,
+  .list2 li,
+  .list2 a {
+    font-size: 1.3rem;
+  }
+  .list2{
+    text-align: center;
+    list-style: none;
+  }
+
+  .meto_info a {
+    font-size: 16px;
+  }
+}
 
 
 
 
-
-
+/*Contenido principal de Nosotros*/
 .contenedor_n {
+  width: 100%;
   background-color: #ffffff;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 }
 
 /* Título principal */
-.contenedor_n h1 {
-  width: 100%;
-  max-width: 1000px;
-  font-size: 2rem;
-  color: #000;
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0px 4px 10px #000;
-  text-align: center;
+.n_info h1 {
+      width: 100%;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px black;
+
 }
 
 /* Info principal */
 .n_info {
-  width: 100%;
+  width: 90%;
   background-color: rgb(196, 255, 173);
   padding: 2rem;
   border-radius: 1rem;
@@ -545,8 +1003,7 @@ footer {
 
 /* Misión / visión en cards */
 .mision_info {
-  width: 100%;
-  max-width: 1500px;
+  width: 97%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
@@ -595,8 +1052,7 @@ footer {
 .img_equipo{
   background-color: rgb(196, 255, 173);
   width: 100%;
-  max-width: 1500px;
-  padding: 2rem;
+  padding: 1rem;
   border: 2px solid black;
   border-radius: 1rem;
   display: flex;
@@ -699,4 +1155,145 @@ footer {
   color: white;
   padding: 0.3rem;
   border-radius: 0.5rem;
+}
+
+
+/*contenido principal de Clientes----------------*/
+
+.contenedor_c{
+  padding: 1.5em;
+  background-color: rgb(196, 255, 173);
+  border: 2px solid black;
+ 
+  border-radius: 22px;
+
+}
+.h1_clientes{
+     width: 100%;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px black;
+    
+}
+.h2_clientes{
+  margin: 22px;
+  padding: 2em;
+  font-size: 1.5rem;
+  color: black;
+  border-radius: 22px;
+  background-color: rgb(178, 255, 147) ;
+}
+.contenedor-clientes{
+  padding: 1em;
+}
+.clientes{
+  background-color: rgb(255, 255, 255);
+  padding: 1em;
+  border-radius: 10px;
+
+
+
+}
+.clientes h2{
+  padding: 0.7em;
+  font-size: 1.5rem;
+  background-color: rgb(178, 255, 147) ;
+  color: rgb(0, 0, 0);
+  border-radius: 22px;
+  box-shadow: 0px 5px 10px rgb(0, 0, 0);
+  
+}
+.clientes p {
+  margin-top: 20px;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem;
+  border: 2px solid black;
+  font-size: 1.3rem;
+}
+
+.p_final_s{
+  text-align: center;
+  padding: 1.3rem;
+  font-size: 1.2rem;
+  border-radius: 22px;
+  box-shadow: 0px 4px 10px #000;
+}
+.boton_c{
+  margin-left: 25px;
+}
+
+
+
+/*Aqui empieza la personalizacion de contacto*/
+.contenedor_contact{
+
+  background-color: rgb(196, 255, 173) ;
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 22px;
+}
+.h1-p-contacto{
+  padding: 1em;
+
+}
+.h1-p-contacto h1{
+     width: 100%;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px black;
+}
+.h1-p-contacto p {
+  margin-top: 25px;
+  background-color: rgb(178, 255, 148);
+  padding: 1em;
+  font-size: 1.4rem;
+}
+.cont-beneficios-contacto{
+  justify-items: center;
+  align-items: center;
+}
+.beneficios_contacto{
+  width: 100%;
+    justify-items: center;
+    padding: 1em;
+
+    border-radius: 22px;
+}
+.beneficios_contacto h2{
+  padding: 1em;
+  font-size: 1.8rem;
+}
+.lista_contacto li{
+  font-size: 1.3rem;
+  padding: 0.3rem;
+}
+.formulario_contacto{
+  border-radius: 22px;
+  box-shadow: 0px 5px 10px black;
+}
+.contacto_whatsapp{
+  justify-items: center;
+  padding: 1em;
+  border-radius: 22px;
+  box-shadow: 0px 5px 10px black;
+}
+.contacto_whatsapp p {
+  padding: 1em;
+  font-size: 1.3rem;
+}
+.frase_c_final{
+  justify-items: center;
+  padding: 1em;
+  border-radius: 22px;
+  box-shadow: 0px 5px 10px black;
+}
+.frase_c_final p {
+    padding: 0.4em;
+  font-size: 1.3rem;
 }

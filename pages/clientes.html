@@ -5,88 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Roldan valentin">
     <!--link CSS-->
+  <!--Link de mi ESTILO-->
     <link rel="stylesheet" href="../styles/style.css">
-    <!--LINK DE BOOSTRAP CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/ trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--CDN de boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <title>Nosotros</title>
 </head>
 <body>
-    <header>
-        <div class="img_logo">
-            <img src="../img/logo2.png" alt="logo de Qhantux">
-        </div>
 
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
+
+<header class="custom-header navbar navbar-expand-lg">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+
+                  <!-- LOGO -->
+                  <div class="img_logo">
+                        <img src="../img/logo2.png" alt="logo de Qhantux" class="img-fluid">
+                  </div>
+                  <!-- BOTÓN HAMBURGUESA -->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCustom" aria-controls="menuCustom" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <!-- MENÚ -->
+                  <div class="collapse navbar-collapse justify-content-end" id="menuCustom">
+                        <ul class="navbar-nav menu">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul>
+                  </div>
+      </div>
+</header>
 
 <main>
-
-    <section class="contenedor">
-        <h1>Clientes que confían en nosotros</h1>
-        <p>Estas son algunas de las organizaciones que eligieron a Qhantux como aliado estratégico en su camino hacia la transformación digital.</p>
-
-                    <section class="lista_clientes">
-
-                                <article>
- 
-                                         <h2>CoopRed</h2>
-                                         <p><em>Cooperativa de servicios eléctricos – Buenos Aires</em></p>
-                                         <p><strong>Logro:</strong> Automatización de lecturas de medidores con tecnología IoT,
-                                             reduciendo en un 40% los tiempos operativos mensuales.</p>
+       
+        <section class="container my-5 contenedor_c">
+                    <!--TITULOS-->
+                    <h1 class="h1_clientes">Clientes que confían en nosotros</h1>
+                    <h2 class="h2_clientes">
+                         Estas son algunas de las organizaciones que eligieron a Qhantux como aliado estratégico en su camino hacia la transformación digital.
+                    </h2>
+                    <!--BLOQUE CLIENTES-->
+                    <div class="row gy-4 contenedor-clientes">
+                            <!-- Cliente 1 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <article class="p-3 h-100 clientes">
+                                <h2>CoopRed</h2>
+                                <p><em>Cooperativa de servicios eléctricos – Buenos Aires</em></p>
+                                <p><strong>Logro:</strong> Automatización de lecturas de medidores con tecnología IoT, reduciendo en un 40% los tiempos operativos mensuales.</p>
                                 </article>
+                            </div>
 
-                                <article>
-
-                                         <h2>DataAndes</h2>
-                                         <p><em>Consultora ambiental con base tecnológica – Mendoza</em></p>
-                                         <p><strong>Logro:</strong> Desarrollo de plataforma web para seguimiento de impacto ambiental en proyectos agroindustriales.
-                                             Mejora en la trazabilidad de datos y reportes automatizados.</p>
+                            <!-- Cliente 2 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <article class=" p-3 h-100 clientes">
+                                <h2>DataAndes</h2>
+                                <p><em>Consultora ambiental con base tecnológica – Mendoza</em></p>
+                                <p><strong>Logro:</strong> Desarrollo de plataforma web para seguimiento de impacto ambiental en proyectos agroindustriales.</p>
                                 </article>
+                            </div>
 
-                                <article>
-
-                                         <h2>FerroSoft</h2>
-                                         <p><em>Software industrial para logística ferroviaria – Córdoba</em></p>
-                                         <p><strong>Logro:</strong> Implementación de sistema de gestión de cargas y trazabilidad ferroviaria en tiempo real.
-                                             Incremento del 30% en eficiencia logística.</p>
+                            <!-- Cliente 3 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <article class="p-3 h-100 clientes">
+                                <h2>FerroSoft</h2>
+                                <p><em>Software industrial – Córdoba</em></p>
+                                <p><strong>Logro:</strong> Gestión de cargas y trazabilidad ferroviaria. Incremento del 30% en eficiencia logística.</p>
                                 </article>
+                            </div>
 
-                                <article>
-                                         <h2>EcoVida Salud</h2>
-                                         <p><em>Red de centros médicos – Rosario</em></p>
-                                         <p><strong>Logro:</strong> Integración de sistemas de turnos, historias clínicas y facturación.
-                                             Mejora del 60% en la atención al paciente y control interno.</p>
+                            <!-- Cliente 4 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <article class=" p-3 h-100 clientes">
+                                <h2>EcoVida Salud</h2>
+                                <p><em>Red de centros médicos – Rosario</em></p>
+                                <p><strong>Logro:</strong> Integración de sistemas internos. Mejora del 60% en atención al paciente.</p>
                                 </article>
+                            </div>
 
-                                <article>
-                                        
-                                         <h2>Mercado Solar</h2>
-                                         <p><em>Plataforma de comercialización de energía renovable – Salta</em></p>
-                                         <p><strong>Logro:</strong> Diseño de marketplace personalizado para comercialización P2P de energía solar, 
-                                            con sistema de gestión de contratos y métricas en tiempo real.</p>
+                            <!-- Cliente 5 -->
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <article class="p-3 h-100 clientes">
+                                <h2>Mercado Solar</h2>
+                                <p><em>Marketplace de energía – Salta</em></p>
+                                <p><strong>Logro:</strong> Comercialización P2P de energía solar con contratos digitales y métricas.</p>
                                 </article>
-                    </section>
+                            </div>
 
-                    <section class="frase_llamado">
-                                <article>
-                                        
-                                        <p>En Qhantux trabajamos para crear relaciones duraderas basadas en confianza y resultados. ¿Querés ser parte?</p>
-                                        <a href="contacto.html">Hablemos</a>
+                            <!-- Cliente 6 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <article class="p-3 h-100 clientes">
+                                <h2>AgroLogic</h2>
+                                <p><em>AgTech – Santa Fe</em></p>
+                                <p><strong>Logro:</strong> Plataforma para monitoreo satelital de cultivos. Reducción del 20% en pérdidas.</p>
                                 </article>
-                            
-                    </section>
-    </section>
+                            </div>
 
+                            <!-- Cliente 7 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <article class=" p-3 h-100 clientes">
+                                <h2>TransData</h2>
+                                <p><em>Operadora logística – San Juan</em></p>
+                                <p><strong>Logro:</strong> App móvil para gestión de flotas en tiempo real.</p>
+                                </article>
+                            </div>
+
+                            <!-- Cliente 8 -->
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <article class="p-3 h-100 clientes">
+                                <h2>Innobotics</h2>
+                                <p><em>Startup de robótica – Buenos Aires</em></p>
+                                <p><strong>Logro:</strong> Integración de sistema de control remoto para brazos industriales desde la nube.</p>
+                                </article>
+                            </div>
+
+                            <!-- Cliente 9 -->
+                            <div class="col-12 col-md-6 col-lg-4 ">
+                                <article class="p-3 h-100 clientes">
+                                <h2>Clima360</h2>
+                                <p><em>Monitoreo climático – Chaco</em></p>
+                                <p><strong>Logro:</strong> Estaciones meteorológicas conectadas para alertas tempranas personalizadas.</p>
+                                </article>
+                            </div>
+                    </div>
+
+            <!-- Llamado a la acción -->
+                <div class="end_Servicio">
+                        <p class="p_final_s">En Qhantux trabajamos para crear relaciones duraderas basadas en confianza y resultados. ¿Querés ser parte?
+                        <a href="contacto.html" class="btn btn-success mt-2 boton_c">Hablemos</a></p> 
+                </div>
+        </section>
 </main>
 
 
@@ -128,6 +181,7 @@
 
         
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
