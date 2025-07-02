@@ -44,88 +44,97 @@
 
 
 <main>
+        <!-- Contenedor principal con márgenes verticales -->
+        <section class="container my-5 contenedor_contact">
 
-      <section class="container my-5 contenedor_contact">
-                <div class="row mb-4">
-                        <div class="col  h1-p-contacto">
-                            <h1>Contacto</h1>
-                            <p>
-                              ¿Querés impulsar tu transformación digital? Estamos listos para escucharte.
-                              Completá el formulario y te responderemos a la brevedad.
-                            </p>
-                      </div>
+              <!-- Título y descripción de la sección de contacto -->
+              <div class="row mb-4">
+                <div class="col h1-p-contacto">
+                  <h1>Contacto</h1>
+                  <p>
+                    ¿Querés impulsar tu transformación digital? Estamos listos para escucharte.
+                    Completá el formulario y te responderemos a la brevedad.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Lista de beneficios al contactar a la empresa -->
+              <div class="row mb-5">
+                <div class="col cont-beneficios-contacto">
+                  <section class="beneficios_contacto">
+                    <h2>¿Por qué hablar con nosotros?</h2>
+                    <ul class="list-unstyled lista_contacto">
+                      <li>✅ Te asesoramos sin compromiso: escuchamos tu necesidad y te orientamos.</li>
+                      <li>⚙️ Soluciones reales, pensadas para tu contexto, no fórmulas genéricas.</li>
+                      <li>🤝 Trato humano, claro y cercano. Hablás con personas, no con bots.</li>
+                      <li>📈 Experiencia comprobada en múltiples rubros, desde PyMEs hasta grandes empresas.</li>
+                      <li>🌱 Creemos en la tecnología que transforma sin excluir.</li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+
+              <!-- Formulario de contacto centrado -->
+              <div class="row justify-content-center mb-5">
+                <div class="col-lg-8">
+                  <form action="#" method="post" class="p-4 formulario_contacto bg-light">
+                    <!-- Campo: Nombre -->
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre y apellido:</label>
+                      <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+
+                    <!-- Campo: Correo -->
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Correo electrónico:</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <!-- Campo: Empresa -->
+                    <div class="mb-3">
+                      <label for="empresa" class="form-label">Empresa (opcional):</label>
+                      <input type="text" class="form-control" id="empresa" name="empresa">
+                    </div>
+
+                    <!-- Campo: Mensaje -->
+                    <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje:</label>
+                      <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+
+                    <!-- Botón de envío -->
+                    <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+                  </form>
+                </div>
+              </div>
+
+              <!-- Contacto alternativo por WhatsApp y mensaje final -->
+              <div class="row mb-4">
+                <!-- Opción de contacto por WhatsApp -->
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                  <section class="contacto_whatsapp">
+                    <p>¿Preferís algo más directo? También podés contactarnos por WhatsApp:</p>
+                    <a href="https://wa.me/541145678900" target="_blank" class="btn btn-success">
+                      📱 Escribinos al +54 11 4567-8900
+                    </a>
+                  </section>
                 </div>
 
-                <div class="row mb-5">
-                    <div class="col cont-beneficios-contacto">
-
-                        <section class="beneficios_contacto">
-                              <h2>¿Por qué hablar con nosotros?</h2>
-                              <ul class="list-unstyled lista_contacto">
-                                  <li>✅ Te asesoramos sin compromiso: escuchamos tu necesidad y te orientamos.</li>
-                                  <li>⚙️ Soluciones reales, pensadas para tu contexto, no fórmulas genéricas.</li>
-                                  <li>🤝 Trato humano, claro y cercano. Hablás con personas, no con bots.</li>
-                                  <li>📈 Experiencia comprobada en múltiples rubros, desde PyMEs hasta grandes empresas.</li>
-                                  <li>🌱 Creemos en la tecnología que transforma sin excluir.</li>
-                              </ul>
-                      </section>
-
-                  </div>
+                <!-- Frase motivadora final -->
+                <div class="col-12 col-lg-6">
+                  <section class="frase_c_final">
+                    <p>
+                      No importa si estás dando los primeros pasos o si buscás optimizar procesos complejos.
+                      En Qhantux, te ayudamos a lograrlo. Contactanos y construyamos juntos el futuro digital de tu empresa.
+                    </p>
+                  </section>
                 </div>
+              </div>
 
-                <div class="row justify-content-center mb-5">
-                  <div class="col-lg-8 ">
-                    <form action="#" method="post" class=" p-4 formulario_contacto bg-light">
-                          <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre y apellido:</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" required>
-                          </div>
-
-                          <div class="mb-3">
-                            <label for="email" class="form-label">Correo electrónico:</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                          </div>
-
-                          <div class="mb-3">
-                            <label for="empresa" class="form-label">Empresa (opcional):</label>
-                            <input type="text" class="form-control" id="empresa" name="empresa">
-                          </div>
-
-                          <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje:</label>
-                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
-                          </div>
-
-                          <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
-                    </form>
-                  </div>
-                </div>
-
-                <div class="row mb-4">
-                  <div class="col">
-                      <section class="contacto_whatsapp">
-                        <p>¿Preferís algo más directo? También podés contactarnos por WhatsApp:</p>
-                        <a href="https://wa.me/541145678900" target="_blank" class="btn btn-success">
-                          📱 Escribinos al +54 11 4567-8900
-                        </a>
-                      </section>
-                  </div>
-                  <div class="col">
-                    <section class="frase_c_final">
-                      <p>
-                        No importa si estás dando los primeros pasos o si buscás optimizar procesos complejos.
-                        En Qhantux, te ayudamos a lograrlo. Contactanos y construyamos juntos el futuro digital de tu empresa.
-                      </p>
-                    </section>
-                  </div>
-                  
-                </div>
-
-      </section>
-            
-   
-     
+        </section>
 </main>
+
+    
 
 
 
@@ -159,7 +168,7 @@
               <p>© 2025 Qhantux Solutions. Todos los derechos reservados.</p>
               
               <div class="footer_logo">
-                    <img src="/img/logo2.png" alt="">
+                    <img src="../img/logo2.png" alt="">
              </div>
         </div>
 

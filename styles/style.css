@@ -7,19 +7,15 @@
 
     
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 h1 ,h2,h3{
     font-family: "Montserrat", sans-serif;
 }
 p{
     font-family:  "Roboto", sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
-
-
 
 
 /*HEADER + MENU----------------------------------------------------------------------------------------------*/
@@ -77,7 +73,7 @@ p{
 /* Mobile: menú vertical */
 @media (max-width: 990px) {
   .img_logo {
-  width: 50%;
+  width: 35%;
 }
 
 .img_logo img {
@@ -782,6 +778,9 @@ footer {
 /*Diseño mobile*/
 @media screen and (max-width: 768px) {
   /* Intro servicios */
+  .contenedor_s{
+    width: 100%;
+  }
   .intro_servicios {
     width: 100%;
     grid-template-columns: 1fr;
@@ -853,8 +852,11 @@ footer {
 
 
 @media screen and (max-width: 480px) {
-
+  .contenedor_s{
+    width: 100%;
+  }
   .contenedor_s h1 {
+    width: 100%;
     font-size: 25px;
     padding: 1em;
   
@@ -955,7 +957,7 @@ footer {
 
 /* Título principal */
 .n_info h1 {
-      width: 100%;
+    width: 100%;
     font-size: 1.5rem;
     color: rgb(0, 0, 0);
     padding: 2em;
@@ -967,7 +969,7 @@ footer {
 
 /* Info principal */
 .n_info {
-  width: 90%;
+  width: 100%;
   background-color: rgb(196, 255, 173);
   padding: 2rem;
   border-radius: 1rem;
@@ -1156,6 +1158,106 @@ footer {
   padding: 0.3rem;
   border-radius: 0.5rem;
 }
+/*Diseno mobile ------------------------*/
+@media (max-width: 430px) {
+  .contenedor_n {
+    padding: 1rem;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .n_info h1 {
+    font-size: 1.4rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .art_ninfo {
+    padding: 1.5rem;
+  }
+
+  .n_info h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .n_info p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .mision_info {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .m_card {
+    padding: 1.2rem;
+  }
+
+  .m_card h3 {
+    font-size: 1.25rem;
+    padding: 0.8rem;
+  }
+
+  .m_card p {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .m_card li {
+    font-size: 0.95rem;
+  }
+
+  .img_equipo article {
+    grid-template-columns: 1fr;
+  }
+
+  .img_equipo figure {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  .img_equipo div {
+    padding: 1rem;
+  }
+
+  .img_equipo div p {
+    font-size: 1rem;
+  }
+
+  .cont_equipo {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .art_equipo h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .art_equipo p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .p_final h2 {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+
+  .p_final p {
+    font-size: 1rem;
+    padding: 1.2rem;
+  }
+
+  .p_final a {
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+}
+
 
 
 /*contenido principal de Clientes----------------*/
@@ -1296,4 +1398,9 @@ footer {
 .frase_c_final p {
     padding: 0.4em;
   font-size: 1.3rem;
+}
+
+
+@media screen and (max-width: 480px){
+
 }
