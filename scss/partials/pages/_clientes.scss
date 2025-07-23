@@ -1,0 +1,38 @@
+@use "../utilities/mixins";
+@use "../utilities/variable";
+
+.contenedor_c
+{   
+    padding: 1em;
+    background-color: variable.$color_Contenedor;
+    border: variable.$border_contenedor;
+    border-radius: variable.$radio_borde;
+    .contenedor-clientes{
+        padding: 2em;
+        
+        .clientes{
+            
+            background-color: rgb(255, 255, 255);
+            border-radius: variable.$radio_borde;
+            box-shadow: variable.$box_sombra;
+
+            .h2_clientes{
+                color: green;
+                font-size: 1.8rem;
+                padding: 0.6em;
+                border-radius: variable.$radio_borde;
+                border: variable.$border_contenedor;
+            }
+            .parrafo_cliente{
+                padding: 0.2em;
+                font-size: 1.1rem;
+            }
+        }
+
+    }
+    
+    .end_cliente{
+        border-radius: variable.$radio_borde;
+        box-shadow: variable.$box_sombra;
+    }
+}

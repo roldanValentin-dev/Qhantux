@@ -1,0 +1,83 @@
+@use "../utilities/variable";
+@use "../utilities/mixins";
+
+
+.contenedor_s
+{
+    width: 100%;
+    @include mixins.flex(column, center, center, 30px);
+    
+        .intro_servicios
+        {
+            width: 95%;
+            padding: 2em;
+            background-color: variable.$color_Contenedor;
+            border: variable.$border_contenedor;
+            border-radius: variable.$radio_borde;
+            @include mixins.grid_columnas_filas(1fr, 1fr,center,center);
+            margin-top: 20px;
+            
+            .c-img-servicios
+            {
+                margin-top: 22px;
+                background-color: rgb(187, 255, 155);
+                padding: 1em;
+                @include mixins.grid_columnas(1fr 1fr, center);
+                border-radius: variable.$radio_borde;
+
+                    .img_servicios
+                    {
+                        width: 70%;
+
+                            img{
+                                width: 100%;
+                                border-radius: variable.$radio_borde;
+                            }
+                    }
+            }
+   
+        }
+
+        .bloque_servicios
+        {
+            width: 95%;
+            padding: 2em;
+            background-color: variable.$color_Contenedor;
+            border: variable.$border_contenedor;
+            border-radius: variable.$radio_borde;
+
+            .p_servicio{
+                text-align: center;
+                background-color: white;
+                margin: 22px;
+                font-size: 1.2rem;
+                padding: 0.5em;
+                border: variable.$border_contenedor;
+            }
+        }
+
+        .metodologias
+        {   
+            width: 90%;
+            padding: 2em;
+            @include mixins.grid_columnas(1fr 1fr, none);
+            background-color: variable.$color_Contenedor;
+            border: variable.$border_contenedor;
+            border-radius: variable.$radio_borde;
+            gap: 20px;
+            margin-bottom: 19px;
+
+                .meto_info
+                {
+                    padding: 3em;
+                    border-radius: variable.$radio_borde;
+                    box-shadow: variable.$box_sombra;
+                    
+                }
+
+        }
+    
+        
+
+
+}

@@ -1,0 +1,20 @@
+//BASE
+@use "./partials/base/reset";
+@use "./partials/base/tipografia";
+
+//COMPONENTES
+@use "./partials/components/cards";
+@use "./partials/components/header";
+@use "./partials/components/footer";
+@use "./partials/components/general";
+
+//PAGINAS 
+@use "./partials/pages/index";
+@use "./partials/pages/servicios";
+@use "./partials/pages/nosotros";
+@use "./partials/pages/clientes";
+@use "./partials/pages/contacto";
+//UTILITIES
+@use "./partials/utilities/media";
+@use "./partials/utilities/mixins";
+@use "./partials/utilities/variable";

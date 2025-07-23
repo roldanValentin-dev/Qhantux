@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Roldan Valentin">
-    <link rel="stylesheet" href="styles/style.css"">
-    <!--Link bosstrap CSS-->
+   <!--Link bosstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+       <!--Link ANIMATE CSS-->
+      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Link mi estilo-->
+    <link rel="stylesheet" href="style/style.css"">
     <title>Qhantux</title>
 </head>
 <body>
 
 
 
-<header class="custom-header navbar navbar-expand-lg">
+<header class="custom-header navbar navbar-expand-lg ">
       <div class="container-fluid d-flex justify-content-between align-items-center">
 
                   <!-- LOGO -->
                   <div class="img_logo">
-                        <img src="img/logo2.png" alt="logo de Qhantux" class="img-fluid">
+                        <img src="img/logo2.png" alt="logo de Qhantux" class="logo">
                   </div>
                   <!-- BOTÓN HAMBURGUESA -->
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCustom" aria-controls="menuCustom" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,102 +44,108 @@
 
 <main>
 
-  <!-- Contenedor principal -->
-  <section class="container-fluid my-5">
+        <!-- Contenedor principal -->
+        <section class="container my-5  ">
 
-        <!-- Sección de bienvenida -->
-        <section class="row cont-inicio align-items-center justify-content-center">
+                <!-- Sección de bienvenida -->
+                <section class="row cont-inicio align-items-center justify-content-center animate__animated animate__bounceInDown">
 
-            <!-- Título de bienvenida -->
-            <div class="col-12">
-                <h1 class="inicio_h1">Bienvenido a Qhantux</h1>
-            </div>
+                                <!-- Título de bienvenida -->
+                                <h1 class="inicio_h1">Bienvenido a Qhantux</h1>
+                              
 
-            <!-- Contenido dividido en texto e imagen -->
-            <div class="row articulo-inicio">
+                                        <!-- Contenido dividido en texto e imagen -->
+                                <div class="row articulo-inicio">
 
-                <!-- Texto de presentación -->
-                <article class="col-md-7 col-12">
-                        <div class="contenido">
-                            <h2>Impulsamos el futuro digital de tu empresa</h2>
-                            <h3>Soluciones inteligentes, escalables y personalizadas para los desafíos tecnológicos actuales.</h3>
-                            <p>
-                            En Qhantux combinamos estrategia, desarrollo y automatización para ayudarte a crecer,
-                            escalar y destacar en un mercado global. Nuestras soluciones tecnológicas nacen con raíz, 
-                            pero apuntan al futuro. Hacemos que la tecnología trabaje para vos, con impacto real y humano.
-                            </p>
-                        </div>
-                </article>
+                                                <!-- Texto de presentación -->
+                                        <article class="col-md-7 col-12">
 
-                <!-- Imagen principal -->
-                <article class="col-md-5 col-12 art-img-inicio">
-                        <figure class="art_img">
-                                <img src="img/logo.png" alt="imagen">
-                        </figure>
-                </article>
+                                                <h2 class="h2_inicio">Impulsamos el futuro digital de tu empresa</h2>
+                                                <h3 class="h3_inicio">Soluciones inteligentes, escalables y personalizadas para los desafíos tecnológicos actuales.</h3>
+                                                <p class="parrafo_inicio">
+                                                        En Qhantux combinamos estrategia, desarrollo y automatización para ayudarte a crecer,
+                                                        escalar y destacar en un mercado global. Nuestras soluciones tecnológicas nacen con raíz, 
+                                                        pero apuntan al futuro. Hacemos que la tecnología trabaje para vos, con impacto real y humano.
+                                                </p>
 
-            </div>
+                                        </article>
+
+                                                <!-- Imagen principal -->
+                                        <article class="col-md-5 col-12 img--inicio">
+
+                                                <figure class="art_img">
+                                                                        
+                                                        <img src="img/logo.png" alt="imagen">
+                                                </figure>
+                                        </article>
+
+                                </div>
+                </section>
+
+                <!-- Sección informativa de servicios -->
+                <section class="cont-inicio animate__animated animate__bounceInLeft">
+
+                                <!-- Primera fila: ¿Por qué elegir Qhantux? -->
+                                <div class="row align-items-center justify-content-center mb-5">
+
+                                                <!-- Texto explicativo -->
+                                                <article class="col-md-6">
+
+                                                        <h2 class="h2_inicio">¿Por qué elegir Qhantux?</h2>
+                                                        <p class="parrafo_inicio">
+                                                                Porque combinamos estrategia, tecnología e innovación con una atención
+                                                                100% enfocada en tus necesidades. No ofrecemos paquetes genéricos:
+                                                                creamos soluciones únicas para cada cliente.
+                                                        </p>
+                                                        <ul class="list">
+                                                                <li class="list_li">+10 años desarrollando tecnología para empresas reales</li>
+                                                                <li class="list_li">Equipo certificado en plataformas globales</li>
+                                                                <li class="list_li">Metodologías ágiles con resultados concretos</li>
+                                                                <li class="list_li">Acompañamiento cercano y soporte continuo</li>
+                                                        </ul>
+                                                </article>
+
+
+                                                <!-- Imagen representativa -->
+                                                <div class="col-md-6 img_servicio">
+
+                                                        <figure>
+
+                                                                <img src="img/intro2.png" alt="Intro imagen 1">
+                                                        </figure>
+                                                </div>
+                                </div>
+
+                                <!-- Segunda fila: Servicios más demandados -->
+                                <div class="row align-items-center justify-content-center flex-md-row-reverse">
+
+                                                <!-- Texto sobre los servicios principales -->
+                                                <div class="col-md-6">
+
+                                                        <h2 class="h2_inicio">Soluciones pensadas para tu crecimiento</h2>
+                                                        <p class="parrafo_inicio">Servicios más demandados</p>
+
+                                                        <ul class="list">
+                                                                <li class="list_li">Consultoría IT personalizada</li>
+                                                                <li class="list_li">Desarrollo de software a medida</li>
+                                                                <li class="list_li">Automatización de procesos empresariales</li>
+                                                                <li class="list_li">Integraciones con inteligencia artificial y machine learning</li>
+                                                                <li class="list_li">Ciberseguridad y auditorías digitales</li>
+                                                        </ul>
+                                                </div>
+
+                                                <!-- Imagen representativa -->
+                                                <div class="col-md-6 text-center img_servicio">
+
+                                                        <figure>
+                                                                <img src="img/intro.png" alt="Intro imagen 2">
+                                                        </figure>
+                                                </div>
+
+                                </div>
+                </section>
+
         </section>
-
-            <!-- Sección informativa de servicios -->
-            <section class="cont-servicio">
-
-                    <!-- Primera fila: ¿Por qué elegir Qhantux? -->
-                    <div class="row align-items-center justify-content-center mb-5">
-
-                        <!-- Texto explicativo -->
-                        <article class="col-md-6 info_servicio">
-                                <h2>¿Por qué elegir Qhantux?</h2>
-                                <p>
-                                    Porque combinamos estrategia, tecnología e innovación con una atención
-                                    100% enfocada en tus necesidades. No ofrecemos paquetes genéricos:
-                                    creamos soluciones únicas para cada cliente.
-                                </p>
-                                <ul class="list">
-                                    <li>+10 años desarrollando tecnología para empresas reales</li>
-                                    <li>Equipo certificado en plataformas globales</li>
-                                    <li>Metodologías ágiles con resultados concretos</li>
-                                    <li>Acompañamiento cercano y soporte continuo</li>
-                                </ul>
-                        </article>
-
-                        <!-- Imagen representativa -->
-                        <div class="col-md-6 img_servicio">
-                            <figure>
-                                <img src="img/intro2.png" alt="Intro imagen 1">
-                            </figure>
-                        </div>
-
-                    </div>
-
-                    <!-- Segunda fila: Servicios más demandados -->
-                    <div class="row align-items-center justify-content-center flex-md-row-reverse">
-
-                                <!-- Texto sobre los servicios principales -->
-                                <div class="col-md-6 info_servicio">
-                                <h2>Soluciones pensadas para tu crecimiento</h2>
-                                <p>Servicios más demandados</p>
-                                <ul class="list">
-                                    <li>Consultoría IT personalizada</li>
-                                    <li>Desarrollo de software a medida</li>
-                                    <li>Automatización de procesos empresariales</li>
-                                    <li>Integraciones con inteligencia artificial y machine learning</li>
-                                    <li>Ciberseguridad y auditorías digitales</li>
-                                </ul>
-                                </div>
-
-                                <!-- Imagen representativa -->
-                                <div class="col-md-6 text-center img_servicio">
-                                <figure>
-                                    <img src="img/intro.png" alt="Intro imagen 2">
-                                </figure>
-                                </div>
-
-                    </div>
-
-            </section>
-
-  </section>
 
 </main>
 

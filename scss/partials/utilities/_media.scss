@@ -1,0 +1,368 @@
+@use "../utilities/mixins";
+
+//mobile Header
+@media screen and (max-width: 990px) {
+  .custom-header { 
+        .img_logo {
+            width: 50%;
+        }
+        .logo {
+            width: 100%;
+            height: auto;
+        }
+        .menu {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 5px;
+
+        a {
+            font-size: 1rem;
+            padding: 0.5em;
+        }
+        }
+        .nav-item {
+            width: 100%;
+        }
+  }
+}
+
+
+//Mobile de footer
+@media screen and (max-width: 768px){
+
+    footer{
+        .conte_footer{
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            padding: 1.5em;
+            text-align: center;
+            
+            .redes,
+            .ubicacion{
+                width: 100%;
+                margin: 0;
+                padding: 1.5em;
+            }
+
+            .redes h3,
+            .ubicacion h3{
+                font-size: 1.5rem;
+            }
+            .redes li{
+                margin: 12px;
+            }
+            .redes a{
+                font-size: 1.1rem;
+            }
+            .ubicacion address{
+                font-size: 1.1rem;
+            }
+            .end_footer{
+                margin-top: 22px;
+                flex-direction: column;
+                gap: 0.5em;
+                padding: 1em;
+                text-align: center;
+            }
+            .footer_logo{
+                width: 180px;
+            }
+            
+        }
+    }
+}
+@media screen and (max-width: 480px){
+
+    footer{
+
+        padding: 1rem 0.5rem;
+        .conte_footer{
+            grid-template-columns: 1fr;
+            gap: 1em;
+            padding: 1em;
+            text-align: center;
+            
+            .redes,
+            .ubicacion{
+                width: 100%;
+                margin: 0;
+                padding: 1em 0.5em;
+            }
+
+            .redes h3,
+            .ubicacion h3{
+                font-size: 1.5rem;
+            }
+            .redes li{
+                margin: 12px;
+            }
+            .redes a{
+                font-size: 1.1rem;
+            }
+            .ubicacion address{
+                font-size: 1rem;
+            }
+            .end_footer{
+                margin-top: 22px;
+                flex-direction: column;
+                gap: 5px;
+                padding: 0.5em;
+                text-align: center;
+            }
+            .footer_logo{
+                width: 180px;
+            }
+            
+        }
+    }
+}
+
+//MOBILE index-------------------------------------------------------------------
+@media screen and (max-width: 430px){
+
+    .cont-inicio
+    {
+        padding: 1rem;
+        .h2_inicio{
+            font-size: 1.5rem;
+            padding: 1.5rem;      
+        }
+
+        .h3_inicio {
+            font-size: 1.3rem;
+            text-align: left;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        .parrafo_inicio {
+            font-size: 1.1rem;
+            padding: 0.5rem;
+            margin: 1px;
+        }
+        
+        .inicio_h1 
+        {
+            font-size: 1.8rem;
+            padding: 1rem;
+            text-align: center;
+        }
+        .articulo-inicio 
+        {
+            padding: 1rem;
+            text-align: center;
+            align-items: center;
+        }
+        .art_img
+        {
+            
+            width: 100%;
+            margin: 0 auto;
+            
+                img{
+                    border-radius: 12px;
+                }
+        }
+        .img_servicio
+        {
+            width: 90%;
+            padding: 1em 0;
+
+            figure
+            {
+                 width: 100%;
+
+                    img{
+                        width: 100%;
+                        border-radius: 16px;
+                    }
+            }
+        }
+
+
+    }
+}
+
+
+//MOBILE DE SERVICIOS
+@media screen and (max-width: 430px){
+
+    .contenedor_s
+    {
+    
+        padding: 0em;
+
+            .intro_servicios
+            {
+                width: 96%;
+                padding: 1em;
+
+                .c-img-servicios{
+                    @include mixins.grid_columnas(1fr, center);
+
+                    .img_servicios{
+                        width: 100%;
+
+                    }
+                }
+            }
+
+            .bloque_servicios{
+                width: 100%;
+                padding: 0.5em;
+
+                .h3_servicio{
+
+                    padding: 1rem;
+                }
+                .parrafo_general1{
+                    padding: 0.5em;
+                }
+                .p_servicio{
+                    padding: 1em;
+                    text-align: center;
+                }
+
+                    .cont_card
+                    {
+                        @include mixins.grid_columnas_filas(1fr,none,center,center);
+
+                            .card
+                            {
+                                width: 100%;
+                                padding: 1.2em;
+                                margin: 10px;
+                                
+                            }
+                    }
+
+            }
+            .metodologias{
+                width: 97%;
+                padding: 1em;
+                @include mixins.grid_columnas(1fr, none);
+                .meto_info{
+                    padding: 1em;
+                }
+            }
+
+
+    }
+}
+
+//MOBILE DE NOSOTROS
+@media screen and (max-width: 430px) {
+
+    .contenedor_n
+    {
+        width: 100%;
+        padding: 1em;
+
+
+            .h2--general{
+                width: 100%;
+                text-align: center;
+            }
+            .parrafo_general2{
+                text-align: center;
+                padding: 1em;
+                font-size: 1.1rem;
+            }
+            .parrafo_nosotros{
+                text-align: center;
+                padding: 0.5em;
+                font-size: 1.1rem;
+            }
+
+            .n_info{
+                width: 100%;
+                padding: 1rem;
+
+                    .art_ninfo{
+                        padding: 1rem;
+
+                    }
+            }
+            .cont_card{
+                padding: 0.5em;
+                @include mixins.grid_columnas_filas(1fr, none ,center,center);
+            }
+            .cont_mision{
+                @include mixins.grid_columnas(1fr,center);
+            }
+            
+
+            .cont_equipo
+            {
+                width: 100%;
+                padding: 0.5em;
+
+                .cont_art_img
+                {
+                    @include mixins.grid_columnas(1fr,center);
+                    gap: 0px;
+
+                    .img_equipo{
+                        width: 100%;
+                    }
+                }
+            }
+    }
+}
+
+//MOBILE DE CLIENTE 
+@media screen and (max-width: 430px){
+    .contenedor_c{
+        padding: 2em;
+
+        .h2--general{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        .h2_clientes{
+            text-align: center;
+        }
+        .parrafo_cliente{
+            text-align: center;
+        }
+        .contenedor-clientes{
+            padding: 1em;
+        }
+    }
+}
+
+
+
+//MOBILE DE CONTACTO----------------------------------------------------------
+@media screen and (max-width: 430px) {
+
+     .cont_contact
+     {
+        padding: 1em;
+            
+            .parrafo_contacto{
+                padding: 0.7em;
+                font-size: 1.1rem;
+            }
+            .cont-beneficios-form
+            {
+                padding: 0em;
+
+                .beneficios_contacto
+                {
+                    padding: 0em;
+
+                    .h2_contacto{
+                        padding: 1em;
+                        text-align: center;
+                    }
+                }
+
+                .cont-formulario{
+                    padding: 1em;
+                    margin-bottom: 22px;
+                }
+
+            }
+     }
+}

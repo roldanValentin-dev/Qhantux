@@ -1,0 +1,74 @@
+
+@use "../utilities/variable";
+@use "../utilities/mixins";
+
+footer{
+
+    background-color: variable.$color_footer;
+    color: black;
+    padding: 2rem 1rem;
+    border: variable.$border_contenedor;
+
+    .conte_footer{
+        padding: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        border-radius: variable.$radio_borde;
+        box-shadow: variable.$box_sombra;
+
+        .redes{
+            text-align: center;
+            width: 60%;
+            padding: 2em;
+            margin-left: 200px;
+            
+            ul{
+                list-style: none;
+                padding: 0;
+            }
+            li{
+                margin: 22px;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    background-color: variable.$color_hover;
+                    color: white;
+                    padding: 0.4em;
+                    border-radius: variable.$radio_borde;
+                }
+            }
+        }
+
+        .ubicacion{
+            text-align: center;
+            width: 60%;
+            padding: 2em;
+            margin-right: 200px;
+
+            address{
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        }
+    }
+    .end_footer {
+    width: 100%;
+    @include mixins.flex(row, center, center, 5px);
+    padding: 0.5em;
+    text-align: center;
+
+    .footer_logo {
+      width: 200px;
+
+      img {
+        width: 100%;
+      }
+    }
+}
+}

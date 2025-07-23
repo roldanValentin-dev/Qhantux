@@ -1,0 +1,89 @@
+@use "../utilities/variable";
+
+.h1--general {
+    background-color: variable.$color_Contenedor;
+    width: 100%;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    padding: 2em;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px black;
+}
+
+.h2--general {
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+
+.h2_servicio {
+    padding: 1em;
+    font-size: 1.8rem;
+    margin-top: 22px;
+    text-align: center;
+    box-shadow: variable.$box_sombra;
+    background-color: rgb(209, 255, 192);
+    border-radius: variable.$radio_borde;
+}
+
+.parrafo_general1 {
+    font-size: 1.3rem;
+    padding: 1em;
+    text-align: center;
+
+}
+
+.parrafo_general2 {
+    font-size: 1.2rem;
+    padding: 1em;
+}
+
+.h3_servicio {
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: variable.$color_h3;
+    padding: 0.7em;
+    color: rgb(6, 192, 0);
+    border-radius: variable.$radio_borde;
+}
+
+.list {
+    font-size: 1.2rem;
+    padding: 1em;
+    margin: 22px;
+
+    .list_li {
+        margin-bottom: 1rem;
+        line-height: 1.4;
+    }
+}
+
+.boton_contacto {
+    padding: 0.3em;
+    color: rgb(68, 0, 255);
+    font-size: 18px;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+
+    &:hover {
+        background-color: rgb(0, 255, 13);
+        color: white;
+        border-radius: 0.5em;
+    }
+}
+.boton-whatsapp {
+  margin: 22px;
+  padding: 0.6em;
+  border-radius: 22px;
+  box-shadow: 0px 5px 10px black;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.boton-whatsapp:hover {
+  background-color: rgb(9, 216, 9);
+  color: white;
+}

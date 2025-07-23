@@ -1,0 +1,94 @@
+@use "../utilities/variable";
+
+
+.cont-inicio{
+    background-color: variable.$color_Contenedor;
+    padding: 3rem;
+    border-radius: variable.$radio_borde;
+    border: solid 2px black;
+    margin-top: 22px;
+
+        .inicio_h1
+        {
+            
+            color: rgb(0, 2, 0);
+            padding: 2rem;
+            font-size: 2.5rem;
+            width: 100%;
+            padding: 1em;
+            border-radius: 22px;
+        }
+
+        .articulo-inicio
+        {
+
+            padding: 1rem;
+            border-radius: variable.$radio_borde;
+            box-shadow: variable.$box_sombra;
+
+                .h2_inicio 
+                {
+                    width: 100%;
+                    padding: 1em;
+                    font-size: 1.7rem;
+                    margin-bottom: 1rem;
+                    box-shadow: variable.$box_sombra;
+                    border-radius: variable.$radio_borde;
+                }
+                .h3_inicio
+                {
+
+                    font-size: 1.5rem;
+                    color: black;
+                    padding: 0.75rem;
+                    margin-top: 1em;
+                }
+                .parrafo_inicio
+                {
+
+                    font-size: 1.2rem;
+                    line-height: 1.6;
+                    padding: 1rem;
+                    border-radius: 10px;
+                }
+
+                .img--inicio 
+                {
+                    justify-items: center;
+
+                        .art_img 
+                        {
+
+                            width: 80%;
+                            background-color: #0f0f0f;
+                            border-radius: 22px;
+
+                            img {
+                                width: 100%;
+                                border-radius: 10px;
+                            }
+
+                        }
+                        
+                }
+        }
+       
+        .img_servicio
+        {
+            width: 50%;
+            justify-items: center;
+
+            figure
+            {
+                width: 80%;
+
+                img{
+                    width: 100%;
+                    border-radius: 22px;
+                    box-shadow: 0px 10px 10px black;
+                    border: 2px solid black;
+                }
+            }
+
+        }
+}

@@ -1,0 +1,46 @@
+@use "../utilities/variable";
+
+.custom-header{
+
+    background-color: variable.$color_header;
+    padding: 2rem;
+    border: 2px solid black;
+    .img_logo{
+        width: 200px;
+    }
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+    .menu{
+        font-family: "Montserrat", sans-serif;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        padding-left: 0;
+        margin-bottom: 0;
+
+        li{
+            list-style: none;
+        }
+        a{
+            font-size: 1.1rem;
+            color: black;
+            text-decoration: none;
+            transition:  all 0.3s ease;
+            &:hover{
+                background-color: variable.$color_hover;
+                color: white;
+                padding: 1rem;
+                border-radius: 1em;
+            }
+            &:focus{
+                outline: 2px solid #000000;
+                background-color: rgb(0, 158, 0);
+                color: rgb(255, 255, 255);
+                padding: 0.5em 1em;
+                border-radius: 1em;
+            }
+        }
+    }
+}

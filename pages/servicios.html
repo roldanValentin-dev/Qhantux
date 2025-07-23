@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Roldan Valentin">
-    <!--Link de mi ESTILO-->
-    <link rel="stylesheet" href="../styles/style.css">
-    <!--CDN de boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <!--Link bosstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+     <!--link CDN animation-->
+      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--Link mi estilo-->
+      <link rel="stylesheet" href="../style/style.css">
 
       
     <title>Qhantux</title>
@@ -45,114 +47,125 @@
 
 <main>
       <!-- Contenedor general de servicios -->
-      <section class="contenedor_s">
+      <section class="contenedor_s animate__animated animate__bounceInLeft">
 
-            <!-- Sección introductoria a los servicios -->
-            <section class="container my-5 intro_servicios">
-                        <h1>Nuestros Servicios</h1>
+                  <!-- Sección introductoria a los servicios -->
+                  <section class="container my-5 intro_servicios ">
 
-                        <!-- Título y descripción -->
-                        <article class="titulo_contenedor">
-                                    <h2>Soluciones tecnológicas con impacto real</h2>
-                                    <p>
-                                    En Qhantux ofrecemos un portafolio integral de servicios diseñados para resolver desafíos empresariales modernos con soluciones inteligentes, adaptables y escalables. <br>
-                                    Desde el diagnóstico estratégico hasta la implementación, estamos con vos en cada etapa del proceso.
-                                    </p>
-                        </article>
+                        <h1 class="h1--general">Nuestros Servicios</h1>
 
-                        <!-- Imágenes representativas de los servicios -->
-                        <div class="c-img-servicios">
-                              <figure class="img_servicios">
-                                    <img src="../img/servicios.png" alt="imagen servicios">
-                              </figure>
+                                    <div class="c-img-servicios">
 
-                              <figure class="img_servicios">
-                                    <img src="../img/servicios2.png" alt="imagen servicios">
-                              </figure>
-                        </div>
-            </section>
+                                          <figure class="img_servicios">
+                                                <img src="../img/servicios.png" alt="imagen servicios">
+                                          </figure>
+
+                                          <figure class="img_servicios">
+                                                <img src="../img/servicios2.png" alt="imagen servicios">
+                                          </figure>
+                                    </div>
+
+
+                                    <!-- Título y descripción -->
+                                    <article class="titulo_contenedor">
+                                                <h2 class="h2_servicio">Soluciones tecnológicas con impacto real</h2>
+                                                <p class="parrafo_general1">
+                                                En Qhantux ofrecemos un portafolio integral de servicios diseñados para resolver desafíos empresariales modernos con soluciones inteligentes, adaptables y escalables. <br>
+                                                Desde el diagnóstico estratégico hasta la implementación, estamos con vos en cada etapa del proceso.
+                                                </p>
+                                    </article>
+      
+                  </section>
 
                   <!-- Bloque de tarjetas de servicios -->
-                  <section class="bloque_servicios">
-                              <h2>Servicios</h2>
+                  <section class="bloque_servicios ">
 
-                        <!-- Contenedor de las cards de servicios -->
-                        <section class="cont_card">
+                        <h2 class="h2_servicio">Servicios</h2>
 
-                                    <!-- Servicio 1 -->
-                                    <article class="servicio">
-                                          <h3>Consultoría IT</h3>
-                                          <p>Diagnóstico y planificación de soluciones tecnológicas alineadas a los objetivos del negocio.</p>
-                                          <p class="frase">🔧 “Diseñamos con visión, ejecutamos con precisión.”</p>
-                                    </article>
+                                    <!-- Contenedor de las cards de servicios -->
+                                    <section class="cont_card">
 
-                                    <!-- Servicio 2 -->
-                                    <article class="servicio">
-                                          <h3>Desarrollo de software a medida</h3>
-                                          <p>Aplicaciones web, móviles y de escritorio desarrolladas según necesidades específicas.</p>
-                                          <p class="frase">💻 “El sistema que necesitás, sin lo que no.”</p>
-                                    </article>
+                                                <!-- Servicio 1 -->
+                                                <article class="card">
 
-                                    <!-- Servicio 3 -->
-                                    <article class="servicio">
-                                          <h3>Automatización de procesos</h3>
-                                          <p>Optimización operativa con bots, scripts y flujos inteligentes.</p>
-                                          <p class="frase">⚙️ “Reducí costos. Aumentá eficiencia.”</p>
-                                    </article>
+                                                            <h3 class="h3_servicio">Consultoría IT</h3>
+                                                            <p class="parrafo_general1">Diagnóstico y planificación de soluciones tecnológicas alineadas a los objetivos del negocio.</p>
+                                                            <p class="p_servicio">“Diseñamos con visión, ejecutamos con precisión.” <br>🔧</p>
+                                                </article>
 
-                                    <!-- Servicio 4 -->
-                                    <article class="servicio">
-                                          <h3>Integración de inteligencia artificial</h3>
-                                          <p>Aplicación de IA en análisis de datos, atención al cliente y predicción de patrones.</p>
-                                          <p class="frase">🤖 “Inteligencia real para decisiones reales.”</p>
-                                    </article>
+                                                <!-- Servicio 2 -->
+                                                <article class="card">
 
-                                    <!-- Servicio 5 -->
-                                    <article class="servicio">
-                                          <h3>Ciberseguridad y auditorías</h3>
-                                          <p>Evaluación de riesgos, protección de datos y cumplimiento normativo.</p>
-                                          <p class="frase">🔐 “Prevení antes que lamentar.”</p>
-                                    </article>
+                                                            <h3 class="h3_servicio">Desarrollo de software a medida</h3>
+                                                            <p class="parrafo_general1">Aplicaciones web, móviles y de escritorio desarrolladas según necesidades específicas.</p>
+                                                            <p class="p_servicio">“El sistema que necesitás, sin lo que no.” <br>💻</p>
+                                                </article>
 
-                                    <!-- Servicio 6 -->
-                                    <article class="servicio">
-                                          <h3>Transformación digital</h3>
-                                          <p>Acompañamiento completo para digitalizar procesos, cultura y estructura.</p>
-                                          <p class="frase">🌐 “No solo cambiamos sistemas: transformamos la forma de trabajar.”</p>
-                                    </article>
+                                                <!-- Servicio 3 -->
+                                                <article class="card">
 
-                        </section>
+                                                            <h3 class="h3_servicio">Automatización de procesos</h3>
+                                                            <p class="parrafo_general1">Optimización operativa con bots, scripts y flujos inteligentes.</p>
+                                                            <p class="p_servicio">“Reducí costos. Aumentá eficiencia.” <br>⚙️ </p>
+                                                </article>
+
+                                                <!-- Servicio 4 -->
+                                                <article class="card">
+
+                                                            <h3 class="h3_servicio">Integración de inteligencia artificial</h3>
+                                                            <p class="parrafo_general1">Aplicación de IA en análisis de datos, atención al cliente y predicción de patrones.</p>
+                                                            <p class="p_servicio">“Inteligencia real para decisiones reales.” <br>🤖</p>
+                                                </article>
+
+                                                <!-- Servicio 5 -->
+                                                <article class="card">
+                                                            <h3 class="h3_servicio">Ciberseguridad y auditorías</h3>
+                                                            <p class="parrafo_general1">Evaluación de riesgos, protección de datos y cumplimiento normativo.</p>
+                                                            <p class="p_servicio">“Prevení antes que lamentar.”<br>🔐</p>
+                                                </article>
+
+                                                <!-- Servicio 6 -->
+                                                <article class="card">
+                                                            <h3 class="h3_servicio">Transformación digital</h3>
+                                                            <p class="parrafo_general1">Acompañamiento completo para digitalizar procesos, cultura y estructura.</p>
+                                                            <p class="p_servicio">“No solo cambiamos sistemas: transformamos la forma de trabajar.”<br>🌐 </p>
+                                                </article>
+
+                                    </section>
                   </section>
 
                   <!-- Sección metodologías de trabajo -->
                   <section class="metodologias">
 
-                        <!-- Enfoque general -->
-                        <article class="meto_info">
-                              <h2>Cómo trabajamos</h2>
-                              <p>Nuestro enfoque combina análisis profundo, 
-                              metodologías ágiles y seguimiento continuo para garantizar que cada solución cumpla su 
-                              propósito con excelencia.
-                              </p>
-                        </article>
+                                    <!-- Enfoque general -->
+                                    <article class="meto_info">
 
-                        <!-- Lista de pasos de trabajo -->
-                        <article class="meto_info">
-                                    <ul class="list2">
-                                          <li>Escuchamos tu necesidad</li>
-                                          <li>Proponemos un plan a medida</li>
-                                          <li>Ejecutamos con enfoque ágil</li>
-                                          <li>Medimos y optimizamos resultados</li>
-                                    </ul>
+                                                <h2 class="h2_servicio">Cómo trabajamos</h2>
+                                                <p class="parrafo_general1">Nuestro enfoque combina análisis profundo, 
+                                                metodologías ágiles y seguimiento continuo para garantizar que cada solución cumpla su 
+                                                propósito con excelencia.
+                                                </p>
+                                    </article>
 
-                                    <p>¿Listo para potenciar tu empresa con tecnología? 
-                                    <a href="contacto.html">Hablemos</a>.
-                                    </p>
-                        </article>
+                                    <!-- Lista de pasos de trabajo -->
+                                    <article class="meto_info">
+                                          
+                                                <ul class="list">
+                                                      <li class="list_li">Escuchamos tu necesidad</li>
+                                                      <li class="list_li">Proponemos un plan a medida</li>
+                                                      <li class="list_li">Ejecutamos con enfoque ágil</li>
+                                                      <li class="list_li">Medimos y optimizamos resultados</li>
+                                                </ul>
+
+                                                <p class="parrafo_general1">¿Listo para potenciar tu empresa con tecnología? 
+                                                <a class="boton_contacto" href="contacto.html">Hablemos</a>.
+                                                </p>
+                                    </article>
 
                   </section>
 
       </section>
+
 </main>
 
 
