@@ -118,11 +118,12 @@
     }
 }
 
-//MOBILE index-------------------------------------------------------------------
-@media screen and (max-width: 430px){
 
-    .cont-inicio
+//MOBILE index-------------------------------------------------------------------
+@media screen and (min-width: 430px) and (max-width: 729px) {
+ .cont-inicio
     {
+       
         padding: 1rem;
         .h2_inicio{
             font-size: 1.5rem;
@@ -181,11 +182,13 @@
 
 
     }
+
 }
 
 
+
 //MOBILE DE SERVICIOS
-@media screen and (max-width: 430px){
+@media screen and (min-width: 430px) and (max-width: 729px){
 
     .contenedor_s
     {
@@ -251,7 +254,7 @@
 }
 
 //MOBILE DE NOSOTROS
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 430px) and (max-width: 729px) {
 
     .contenedor_n
     {
@@ -311,7 +314,7 @@
 }
 
 //MOBILE DE CLIENTE 
-@media screen and (max-width: 430px){
+@media screen and (min-width: 430px) and (max-width: 729px){
     .contenedor_c{
         padding: 2em;
 
@@ -334,7 +337,7 @@
 
 
 //MOBILE DE CONTACTO----------------------------------------------------------
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 430px) and (max-width: 729px) {
 
      .cont_contact
      {
