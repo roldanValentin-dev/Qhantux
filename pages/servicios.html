@@ -1,80 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Roldan Valentin">
-   <!--Link bosstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
-      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-     <!--link CDN animation-->
-      <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!--Link mi estilo-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Roldan Valentin">
+      <!--Link bosstrap CSS-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+      <!--link CDN animation-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+      <!--Link mi estilo-->
       <link rel="stylesheet" href="../style/style.css">
 
-      
-    <title>Qhantux</title>
+
+      <title>Qhantux</title>
 </head>
+
 <body>
 
+
 <!--Header + nav-->
-<header class="custom-header navbar navbar-expand-lg">
-      <div class="container-fluid d-flex justify-content-between align-items-center">
+<header>
 
-                  <!-- LOGO -->
-                  <div class="img_logo">
-                        <img src="../img/logo2.png" alt="logo de Qhantux" class="img-fluid">
-                  </div>
-                  <!-- BOTÓN HAMBURGUESA -->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCustom" aria-controls="menuCustom" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class=" navbar navbar-expand-lg container-fluid d-flex justify-content-between align-items-center">
+                <!-- LOGO -->
+                <div class="img_logo">
+                        <img src="../img/logo2.png" alt="logo de Qhantux" class="logo" />
+                </div>
+
+                <!-- BOTÓN HAMBURGUESA -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCustom"
+                        aria-controls="menuCustom" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                  </button>
+                </button>
 
-                  <!-- MENÚ -->
-                  <div class="collapse navbar-collapse justify-content-end" id="menuCustom">
-                        <ul class="navbar-nav menu">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <!-- MENÚ -->
+                <div class="collapse navbar-collapse justify-content-end" id="menuCustom">
+                        <ul class="navbar-nav menu-custom">
+                                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                                <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
                         </ul>
-                  </div>
-      </div>
+                </div>
+        </nav>
+
 </header>
 
 
 
-<main>
-      <!-- Contenedor general de servicios -->
-      <section class="contenedor_s animate__animated animate__bounceInLeft">
+      <main>
+            <!-- Contenedor general de servicios -->
+            <section class="contenedor_s animate__animated animate__bounceInLeft">
 
                   <!-- Sección introductoria a los servicios -->
                   <section class="container my-5 intro_servicios ">
 
                         <h1 class="h1--general">Nuestros Servicios</h1>
 
-                                    <div class="c-img-servicios">
+                        <div class="c-img-servicios">
 
-                                          <figure class="img_servicios">
-                                                <img src="../img/servicios.png" alt="imagen servicios">
-                                          </figure>
+                              <figure class="img_servicios">
+                                    <img src="../img/servicios.png" alt="imagen servicios">
+                              </figure>
 
-                                          <figure class="img_servicios">
-                                                <img src="../img/servicios2.png" alt="imagen servicios">
-                                          </figure>
-                                    </div>
+                              <figure class="img_servicios">
+                                    <img src="../img/servicios2.png" alt="imagen servicios">
+                              </figure>
+                        </div>
 
 
-                                    <!-- Título y descripción -->
-                                    <article class="titulo_contenedor">
-                                                <h2 class="h2_servicio">Soluciones tecnológicas con impacto real</h2>
-                                                <p class="parrafo_general1">
-                                                En Qhantux ofrecemos un portafolio integral de servicios diseñados para resolver desafíos empresariales modernos con soluciones inteligentes, adaptables y escalables. <br>
-                                                Desde el diagnóstico estratégico hasta la implementación, estamos con vos en cada etapa del proceso.
-                                                </p>
-                                    </article>
-      
+                        <!-- Título y descripción -->
+                        <article class="titulo_contenedor">
+                              <h2 class="h2_servicio">Soluciones tecnológicas con impacto real</h2>
+                              <p class="parrafo_general1">
+                                    En Qhantux ofrecemos un portafolio integral de servicios diseñados para resolver
+                                    desafíos empresariales modernos con soluciones inteligentes, adaptables y
+                                    escalables. <br>
+                                    Desde el diagnóstico estratégico hasta la implementación, estamos con vos en cada
+                                    etapa del proceso.
+                              </p>
+                        </article>
+
                   </section>
 
                   <!-- Bloque de tarjetas de servicios -->
@@ -82,133 +91,143 @@
 
                         <h2 class="h2_servicio">Servicios</h2>
 
-                                    <!-- Contenedor de las cards de servicios -->
-                                    <section class="cont_card">
+                        <!-- Contenedor de las cards de servicios -->
+                        <section class="cont_card">
 
-                                                <!-- Servicio 1 -->
-                                                <article class="card">
+                              <!-- Servicio 1 -->
+                              <article class="card">
 
-                                                            <h3 class="h3_servicio">Consultoría IT</h3>
-                                                            <p class="parrafo_general1">Diagnóstico y planificación de soluciones tecnológicas alineadas a los objetivos del negocio.</p>
-                                                            <p class="p_servicio">“Diseñamos con visión, ejecutamos con precisión.” <br>🔧</p>
-                                                </article>
+                                    <h3 class="h3_servicio">Consultoría IT</h3>
+                                    <p class="parrafo_general1">Diagnóstico y planificación de soluciones tecnológicas
+                                          alineadas a los objetivos del negocio.</p>
+                                    <p class="p_servicio">“Diseñamos con visión, ejecutamos con precisión.” <br>🔧</p>
+                              </article>
 
-                                                <!-- Servicio 2 -->
-                                                <article class="card">
+                              <!-- Servicio 2 -->
+                              <article class="card">
 
-                                                            <h3 class="h3_servicio">Desarrollo de software a medida</h3>
-                                                            <p class="parrafo_general1">Aplicaciones web, móviles y de escritorio desarrolladas según necesidades específicas.</p>
-                                                            <p class="p_servicio">“El sistema que necesitás, sin lo que no.” <br>💻</p>
-                                                </article>
+                                    <h3 class="h3_servicio">Desarrollo de software a medida</h3>
+                                    <p class="parrafo_general1">Aplicaciones web, móviles y de escritorio desarrolladas
+                                          según necesidades específicas.</p>
+                                    <p class="p_servicio">“El sistema que necesitás, sin lo que no.” <br>💻</p>
+                              </article>
 
-                                                <!-- Servicio 3 -->
-                                                <article class="card">
+                              <!-- Servicio 3 -->
+                              <article class="card">
 
-                                                            <h3 class="h3_servicio">Automatización de procesos</h3>
-                                                            <p class="parrafo_general1">Optimización operativa con bots, scripts y flujos inteligentes.</p>
-                                                            <p class="p_servicio">“Reducí costos. Aumentá eficiencia.” <br>⚙️ </p>
-                                                </article>
+                                    <h3 class="h3_servicio">Automatización de procesos</h3>
+                                    <p class="parrafo_general1">Optimización operativa con bots, scripts y flujos
+                                          inteligentes.</p>
+                                    <p class="p_servicio">“Reducí costos. Aumentá eficiencia.” <br>⚙️ </p>
+                              </article>
 
-                                                <!-- Servicio 4 -->
-                                                <article class="card">
+                              <!-- Servicio 4 -->
+                              <article class="card">
 
-                                                            <h3 class="h3_servicio">Integración de inteligencia artificial</h3>
-                                                            <p class="parrafo_general1">Aplicación de IA en análisis de datos, atención al cliente y predicción de patrones.</p>
-                                                            <p class="p_servicio">“Inteligencia real para decisiones reales.” <br>🤖</p>
-                                                </article>
+                                    <h3 class="h3_servicio">Integración de inteligencia artificial</h3>
+                                    <p class="parrafo_general1">Aplicación de IA en análisis de datos, atención al
+                                          cliente y predicción de patrones.</p>
+                                    <p class="p_servicio">“Inteligencia real para decisiones reales.” <br>🤖</p>
+                              </article>
 
-                                                <!-- Servicio 5 -->
-                                                <article class="card">
-                                                            <h3 class="h3_servicio">Ciberseguridad y auditorías</h3>
-                                                            <p class="parrafo_general1">Evaluación de riesgos, protección de datos y cumplimiento normativo.</p>
-                                                            <p class="p_servicio">“Prevení antes que lamentar.”<br>🔐</p>
-                                                </article>
+                              <!-- Servicio 5 -->
+                              <article class="card">
+                                    <h3 class="h3_servicio">Ciberseguridad y auditorías</h3>
+                                    <p class="parrafo_general1">Evaluación de riesgos, protección de datos y
+                                          cumplimiento normativo.</p>
+                                    <p class="p_servicio">“Prevení antes que lamentar.”<br>🔐</p>
+                              </article>
 
-                                                <!-- Servicio 6 -->
-                                                <article class="card">
-                                                            <h3 class="h3_servicio">Transformación digital</h3>
-                                                            <p class="parrafo_general1">Acompañamiento completo para digitalizar procesos, cultura y estructura.</p>
-                                                            <p class="p_servicio">“No solo cambiamos sistemas: transformamos la forma de trabajar.”<br>🌐 </p>
-                                                </article>
+                              <!-- Servicio 6 -->
+                              <article class="card">
+                                    <h3 class="h3_servicio">Transformación digital</h3>
+                                    <p class="parrafo_general1">Acompañamiento completo para digitalizar procesos,
+                                          cultura y estructura.</p>
+                                    <p class="p_servicio">“No solo cambiamos sistemas: transformamos la forma de
+                                          trabajar.”<br>🌐 </p>
+                              </article>
 
-                                    </section>
+                        </section>
                   </section>
 
                   <!-- Sección metodologías de trabajo -->
                   <section class="metodologias">
 
-                                    <!-- Enfoque general -->
-                                    <article class="meto_info">
+                        <!-- Enfoque general -->
+                        <article class="meto_info">
 
-                                                <h2 class="h2_servicio">Cómo trabajamos</h2>
-                                                <p class="parrafo_general1">Nuestro enfoque combina análisis profundo, 
-                                                metodologías ágiles y seguimiento continuo para garantizar que cada solución cumpla su 
-                                                propósito con excelencia.
-                                                </p>
-                                    </article>
+                              <h2 class="h2_servicio">Cómo trabajamos</h2>
+                              <p class="parrafo_general1">Nuestro enfoque combina análisis profundo,
+                                    metodologías ágiles y seguimiento continuo para garantizar que cada solución cumpla
+                                    su
+                                    propósito con excelencia.
+                              </p>
+                        </article>
 
-                                    <!-- Lista de pasos de trabajo -->
-                                    <article class="meto_info">
-                                          
-                                                <ul class="list">
-                                                      <li class="list_li">Escuchamos tu necesidad</li>
-                                                      <li class="list_li">Proponemos un plan a medida</li>
-                                                      <li class="list_li">Ejecutamos con enfoque ágil</li>
-                                                      <li class="list_li">Medimos y optimizamos resultados</li>
-                                                </ul>
+                        <!-- Lista de pasos de trabajo -->
+                        <article class="meto_info">
 
-                                                <p class="parrafo_general1">¿Listo para potenciar tu empresa con tecnología? 
-                                                <a class="boton_contacto" href="contacto.html">Hablemos</a>.
-                                                </p>
-                                    </article>
+                              <ul class="list">
+                                    <li class="list_li">Escuchamos tu necesidad</li>
+                                    <li class="list_li">Proponemos un plan a medida</li>
+                                    <li class="list_li">Ejecutamos con enfoque ágil</li>
+                                    <li class="list_li">Medimos y optimizamos resultados</li>
+                              </ul>
+
+                              <p class="parrafo_general1">¿Listo para potenciar tu empresa con tecnología?
+                                    <a class="boton_contacto" href="contacto.html">Hablemos</a>.
+                              </p>
+                        </article>
 
                   </section>
 
-      </section>
+            </section>
 
-</main>
-
+      </main>
 
 
 <footer>
-        <div class="conte_footer">
-              <div class="redes">
+      <div class="conte_footer">
 
-                    <h3>Seguinos</h3>
-                    
-                    <ul>
-                        <li><a href="#">📷 Instagram: @qhantux.solutions</a></li>
-                        <li><a href="#">👍 Facebook: Qhantux Solutions</a></li>
-                        <li><a href="#">𝕏 Twitter: @QhantuxTech</a></li>
-                        <li><a href="#">💼 LinkedIn: Qhantux Solutions</a></li>
-                    </ul>
-                  </div>   
+                  <div class="redes">
 
-              <div class="ubicacion">
+                        <h3>Seguinos</h3>
+                        <ul>
+                              <li><a href="#">📷 Instagram: @qhantux.solutions</a></li>
+                              <li><a href="#">👍 Facebook: Qhantux Solutions</a></li>
+                              <li><a href="#">𝕏 Twitter: @QhantuxTech</a></li>
+                              <li><a href="#">💼 LinkedIn: Qhantux Solutions</a></li>
+                        </ul>
+                  </div>
 
-                      <h3>Ubicacion</h3>
-                      <address>
-                          📍 Av. Innovación 2000, Tucumán, Argentina<br>
-                          🕒 Lunes a Viernes de 9:00 a 18:00<br>
-                          📞 Tel: +54 11 4567-8900
-                      </address>
-              </div>   
-        </div>
-        
-        
-        <div class="end_footer">
-              <p class="parrafo_f">© 2025 Qhantux Solutions. Todos los derechos reservados.</p>
-              
-              <div class="footer_logo">
-                    <img src="../img/logo2.png" alt="">
-             </div>
-        </div>
+                  <div class="ubicacion">
 
-        
+                        <h3>Ubicacion</h3>
+                        
+                        <address>
+                              📍 Av. Innovación 2000, Tucumán, Argentina<br>
+                              🕒 Lunes a Viernes de 9:00 a 18:00<br>
+                              📞 Tel: +54 11 4567-8900
+                        </address>
+                  </div>
+      </div>
+
+
+      <div class="end_footer">
+                  <p>© 2025 Qhantux Solutions. Todos los derechos reservados.</p>
+
+                  <div class="footer_logo">
+
+                        <img src="../img/logo2.png" alt="">
+                  </div>
+      </div>
+
+
 </footer>
 
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
- integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -34,45 +34,45 @@ p {
   box-shadow: 0px 5px 10px black;
 }
 
-.custom-header {
+header {
   background-color: rgb(174, 255, 143);
-  padding: 2rem;
-  border: 2px solid black;
+  padding: 2rem 1rem;
+  border-bottom: 2px solid black;
 }
-.custom-header .img_logo {
+header .img_logo {
   width: 200px;
 }
-.custom-header .logo {
+header .logo {
   width: 100%;
   height: auto;
 }
-.custom-header .menu {
+header .menu-custom {
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 2rem;
   padding-left: 0;
   margin-bottom: 0;
 }
-.custom-header .menu li {
+header .menu-custom li {
   list-style: none;
 }
-.custom-header .menu a {
+header .menu-custom a {
   font-size: 1.1rem;
   color: black;
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.custom-header .menu a:hover {
+header .menu-custom a:hover {
   background-color: rgb(70, 139, 0);
   color: white;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   border-radius: 1em;
 }
-.custom-header .menu a:focus {
+header .menu-custom a:focus {
   outline: 2px solid #000000;
   background-color: rgb(0, 158, 0);
-  color: rgb(255, 255, 255);
+  color: white;
   padding: 0.5em 1em;
   border-radius: 1em;
 }
@@ -513,24 +513,24 @@ footer .end_footer .footer_logo img {
 }
 
 @media screen and (max-width: 990px) {
-  .custom-header .img_logo {
+  header .img_logo {
     width: 50%;
   }
-  .custom-header .logo {
+  header .logo {
     width: 100%;
     height: auto;
   }
-  .custom-header .menu {
+  header .menu-custom {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 5px;
   }
-  .custom-header .menu a {
+  header .menu-custom a {
     font-size: 1rem;
     padding: 0.5em;
   }
-  .custom-header .nav-item {
+  header .nav-item {
     width: 100%;
   }
 }

@@ -2,7 +2,7 @@
 
 //mobile Header
 @media screen and (max-width: 990px) {
-  .custom-header { 
+header { 
         .img_logo {
             width: 50%;
         }
@@ -10,7 +10,7 @@
             width: 100%;
             height: auto;
         }
-        .menu {
+        .menu-custom {
             flex-direction: column;
             align-items: center;
             text-align: center;
