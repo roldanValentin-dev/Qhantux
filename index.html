@@ -13,44 +13,43 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
         <!--Link mi estilo-->
         <link rel="stylesheet" href="style/style.css"">
-    <title>Qhantux</title>
+        <title>Qhantux</title>
 </head>
+
 
 <body>
 
+        <!--Header + nav-->
+        <header>
 
-<!--Header + nav-->
-<header>
+                <nav class=" navbar navbar-expand-lg container-fluid d-flex justify-content-between align-items-center">
+                        <!-- LOGO -->
+                        <div class="img_logo">
+                                <img src="img/logo2.png" alt="logo de Qhantux" class="logo" />
+                        </div>
 
-        <nav class=" navbar navbar-expand-lg container-fluid d-flex justify-content-between align-items-center">
-                <!-- LOGO -->
-                <div class="img_logo">
-                        <img src="../img/logo2.png" alt="logo de Qhantux" class="logo" />
-                </div>
+                        <!-- BOTÓN HAMBURGUESA -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCustom"
+                                aria-controls="menuCustom" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                <!-- BOTÓN HAMBURGUESA -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuCustom"
-                        aria-controls="menuCustom" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                </button>
+                        <!-- MENÚ -->
+                        <div class="collapse navbar-collapse justify-content-end" id="menuCustom">
+                                <ul class="navbar-nav menu-custom">
+                                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pages/clientes.html">Clientes</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
+                                </ul>
+                        </div>
+                </nav>
 
-                <!-- MENÚ -->
-                <div class="collapse navbar-collapse justify-content-end" id="menuCustom">
-                        <ul class="navbar-nav menu-custom">
-                                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                                <li class="nav-item"><a class="nav-link" href="pages/servicios.html">Servicios</a></li>
-                                <li class="nav-item"><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
-                                <li class="nav-item"><a class="nav-link" href="pages/clientes.html">Clientes</a></li>
-                                <li class="nav-item"><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
-                        </ul>
-                </div>
-        </nav>
+        </header>
 
-</header>
 
-        <main>
-
-                <!-- Contenedor principal -->
+        <main> <!-- Contenedor principal -->
                 <section class="container my-5  ">
 
                         <!-- Sección de bienvenida -->
@@ -207,6 +206,7 @@
 
 
         </footer>
+
         <!--Link boostrap JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
