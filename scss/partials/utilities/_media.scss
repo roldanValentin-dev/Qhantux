@@ -1,5 +1,8 @@
 @use "../utilities/mixins";
 
+
+
+
 //mobile Header
 @media screen and (max-width: 990px) {
 header { 
@@ -29,14 +32,15 @@ header {
 
 
 //Mobile de footer
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
 
     footer{
         .conte_footer{
             grid-template-columns: 1fr;
-            gap: 2rem;
-            padding: 1.5em;
+            gap: 1rem;
+            padding: 1em;
             text-align: center;
+            justify-items: center;
             
             .redes,
             .ubicacion{
@@ -47,7 +51,7 @@ header {
 
             .redes h3,
             .ubicacion h3{
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
             .redes li{
                 margin: 12px;
@@ -119,76 +123,226 @@ header {
 }
 
 
-//MOBILE index-------------------------------------------------------------------
-@media screen and (min-width: 430px) and (max-width: 729px) {
- .cont-inicio
-    {
-       
-        padding: 1rem;
-        .h2_inicio{
-            font-size: 1.5rem;
-            padding: 1.5rem;      
+
+
+// Versión para Tablets (768px a 991px)
+@media screen and (min-width: 768px) and (max-width: 900px) {
+
+    .cont-inicio {
+        padding: 1.5rem; 
+
+        .art-contenido{
+            width: 100%;
+        }
+        .inicio_h1 {
+            font-size: 2.2rem;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .h2_inicio {
+            font-size: 1.8rem;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .h3_inicio {
+            font-size: 1.6rem;
+            text-align: center;
+        }
+
+        .parrafo_inicio {
+            font-size: 1.3rem;
+            text-align: left;
+            padding: 1rem;
+        }
+        
+        
+        .articulo-inicio {
+            padding: 1rem;
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+
+         
+            .col-md-7 {
+                width: 100%; 
+                margin-bottom: 1.5rem;
+            }
+            
+           
+            .col-md-9 {
+                width: 80%; 
+                margin-top: 1rem;
+            }
+        }
+        
+
+        .row.align-items-center {
+            margin-bottom: 2rem;
+        }
+        
+
+        .list {
+            padding-left: 1.5rem;
+            text-align: left;
+        }
+        
+        .list_li {
+            font-size: 1.2rem;
+            padding: 0.3rem 0;
+        }
+
+
+        .img_servicio {
+            width: 90%;
+            margin: 1.5rem auto;
+
+            figure {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+//Version de mobile del index 
+@media screen and (max-width: 767px) {
+
+    .cont-inicio {
+        padding: 2rem; 
+        
+        // Títulos
+        .inicio_h1 {
+            font-size: 1.8rem; 
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .h2_inicio {
+            font-size: 1.7rem; 
+            padding: 1rem 0;
+            text-align: center;
         }
 
         .h3_inicio {
             font-size: 1.3rem;
-            text-align: left;
             padding: 0.5rem;
             text-align: center;
         }
+
         .parrafo_inicio {
-            font-size: 1.1rem;
-            padding: 0.5rem;
-            margin: 1px;
-        }
-        
-        .inicio_h1 
-        {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             padding: 1rem;
-            text-align: center;
+            margin: 0; 
+            text-align: justify; 
         }
-        .articulo-inicio 
-        {
-            padding: 1rem;
+
+
+        .articulo-inicio {
+            padding: 1rem 0; 
             text-align: center;
             align-items: center;
         }
-        .art_img
-        {
-            
-            width: 100%;
-            margin: 0 auto;
-            
-                img{
+        
+        // Imagen principal
+        .img--inicio {
+            .art_img {
+                width: 90%; 
+                margin: 0 auto; 
+
+                img {
+                    width: 100%; 
                     border-radius: 12px;
                 }
-        }
-        .img_servicio
-        {
-            width: 90%;
-            padding: 1em 0;
-
-            figure
-            {
-                 width: 100%;
-
-                    img{
-                        width: 100%;
-                        border-radius: 16px;
-                    }
             }
         }
 
+        
+        .img_servicio {
+            width: 100%; 
+            padding: 1em 0;
+            
+            figure {
+                width: 100%;
+                img {
+                    width: 100%;
+                    border-radius: 16px;
+                }
+            }
+        }
+        
+        // Listas
+        .list {
+            
+            padding-left: 1.5rem; 
+            text-align: left;
+        }
 
+        .list_li {
+            font-size: 1.2rem; 
+            padding: 0.3rem 0;
+        }
     }
-
 }
+// TABLETS DE SERVICIOS
+// Usamos el breakpoint de Bootstrap 'md' para una mejor compatibilidad.
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+    .contenedor_s {
+        padding: 1.5rem; // Padding general para un mejor espaciado.
 
+        .intro_servicios {
+            width: 100%; // Ocupa todo el ancho.
+            padding: 1rem;
 
+        }
 
+        .bloque_servicios {
+            padding: 1rem;
+
+            .h3_servicio {
+                font-size: 2rem; // Aumentamos el tamaño de la fuente para tablets.
+                padding: 1.5rem 0;
+                text-align: center;
+            }
+
+            .parrafo_general1, .p_servicio {
+                font-size: 1.1rem; // Ajustamos el tamaño del párrafo.
+                text-align: justify;
+                padding: 0.5rem;
+            }
+
+            .p_servicio {
+                text-align: center;
+            }
+
+            .cont_card {
+
+                @include mixins.grid_columnas_filas(1fr 1fr, auto auto, center, center);
+                gap: 18px ;
+                .card {
+                  width: 100%; // El ancho se ajusta automáticamente a la columna.
+                    padding: 1rem;
+                    
+                }
+            }
+        }
+
+        .metodologias {
+            padding: 1.3rem; // Padding para separar la sección.
+
+            @include mixins.grid_columnas(1fr 1fr, center);
+
+            .meto_info {
+                padding: 1.5rem;
+            }
+        }
+    }
+}
 //MOBILE DE SERVICIOS
-@media screen and (min-width: 430px) and (max-width: 729px){
+@media screen and (max-width: 767px){
 
     .contenedor_s
     {
@@ -253,8 +407,74 @@ header {
     }
 }
 
+
+
+
+// TABLETS DE NOSOTROS
+// Usamos el breakpoint de Bootstrap 'md' para mejor compatibilidad.
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .contenedor_n {
+        padding: 1rem; // Aumentamos el padding para un mejor espaciado en tabletas.
+        
+        // Estilos generales para el texto
+        .h2--general {
+            font-size: 2rem; // Aumentamos el tamaño de los títulos.
+            text-align: center;
+        }
+
+        .parrafo_general2, .parrafo_nosotros {
+            font-size: 1.2rem; // Tamaño de fuente más grande para mejor lectura.
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+
+        // Sección de tarjetas
+        .cont_card {
+            padding: 1.5rem;
+            // Aquí usamos tu mixin para crear un diseño de 2 columnas en tabletas.
+            @include mixins.grid_columnas_filas(1fr, none, center, center);
+            gap: 1.5rem; // Espacio entre las tarjetas.
+
+        }
+
+        // Sección de Misión y Visión
+        .cont_mision {
+            // Asumiendo que tu HTML tiene dos elementos, usamos Grid
+            // para colocarlos uno al lado del otro.
+            @include mixins.grid_columnas(1fr, center);
+            gap: 2rem;
+            padding: 1rem;
+            .art_mision{
+                width: 100%;
+                padding: 2rem;
+                text-align: center;
+            }
+        }
+        
+        // Sección del equipo
+        .cont_equipo {
+            width: 100%;
+            padding: 1rem;
+
+            .cont_art_img {
+                // Si esta sección contiene una imagen y texto, este es el lugar
+                // para crear un diseño de dos columnas.
+                @include mixins.grid_columnas(1fr 1fr, center);
+                gap: 1.5rem;
+                padding: 1rem;
+
+                .img_equipo {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
 //MOBILE DE NOSOTROS
-@media screen and (min-width: 430px) and (max-width: 729px) {
+@media screen and (max-width: 767px) {
 
     .contenedor_n
     {
