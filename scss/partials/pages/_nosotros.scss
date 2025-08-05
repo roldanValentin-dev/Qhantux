@@ -66,20 +66,22 @@
 
         .cont_equipo
         {   
-            width: 80%;
-            padding: 1em;
+            width: 100%;
+            padding: 2em;
             background-color: variable.$color_Contenedor;
             border-radius: variable.$radio_borde;
             border: variable.$border_contenedor;
 
             .cont_art_img{
-
+                background-color: rgb(255, 255, 255);
+                padding: 1em;
                 @include mixins.grid_columnas(1fr 1fr ,center);
-                gap:2rem;
                 align-items: center;
+                border-radius: variable.$radio_borde;
+                box-shadow: variable.$box_sombra;
 
                 .img_equipo{
-                    width: 80%;
+                    width: 90%;
 
                     img{
                         width: 100%;

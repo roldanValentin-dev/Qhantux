@@ -3,7 +3,7 @@
 .h1--general {
     background-color: variable.$color_Contenedor;
     width: 100%;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     color: rgb(0, 0, 0);
     padding: 2em;
     border-radius: 5px;
@@ -12,14 +12,15 @@
 }
 
 .h2--general {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     padding: 1rem;
 }
 
 
 .h2_servicio {
+    width: 100%;
     padding: 1em;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 22px;
     text-align: center;
     box-shadow: variable.$box_sombra;
@@ -28,15 +29,21 @@
 }
 
 .parrafo_general1 {
+    margin-top: 20px;
     font-size: 1.3rem;
     padding: 1em;
     text-align: center;
-
 }
+
 
 .parrafo_general2 {
     font-size: 1.2rem;
     padding: 1em;
+}
+.parrafo_general3 {
+    font-size: 1.3rem;
+    padding: 1em;
+    text-align: center;
 }
 
 .h3_servicio {

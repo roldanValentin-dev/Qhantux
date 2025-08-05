@@ -5,119 +5,135 @@
 
 //mobile Header
 @media screen and (max-width: 990px) {
-header { 
+
+    header {
         .img_logo {
-            width: 50%;
+            width: 150px;
         }
+
         .logo {
             width: 100%;
             height: auto;
         }
+
         .menu-custom {
             flex-direction: column;
             align-items: center;
             text-align: center;
             gap: 5px;
 
-        a {
-            font-size: 1rem;
-            padding: 0.5em;
+            a {
+                font-size: 1rem;
+                padding: 0.5em;
+            }
         }
-        }
+
         .nav-item {
             width: 100%;
         }
-  }
+    }
 }
 
 
 //Mobile de footer
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
 
-    footer{
-        .conte_footer{
+    footer {
+        .conte_footer {
             grid-template-columns: 1fr;
             gap: 1rem;
             padding: 1em;
             text-align: center;
             justify-items: center;
-            
+
             .redes,
-            .ubicacion{
+            .ubicacion {
                 width: 100%;
                 margin: 0;
                 padding: 1.5em;
             }
 
             .redes h3,
-            .ubicacion h3{
+            .ubicacion h3 {
                 font-size: 1.6rem;
             }
-            .redes li{
+
+            .redes li {
                 margin: 12px;
             }
-            .redes a{
+
+            .redes a {
                 font-size: 1.1rem;
             }
-            .ubicacion address{
+
+            .ubicacion address {
                 font-size: 1.1rem;
             }
-            .end_footer{
+
+            .end_footer {
                 margin-top: 22px;
                 flex-direction: column;
                 gap: 0.5em;
                 padding: 1em;
                 text-align: center;
             }
-            .footer_logo{
+
+            .footer_logo {
                 width: 180px;
             }
-            
+
         }
     }
 }
-@media screen and (max-width: 480px){
 
-    footer{
+@media screen and (max-width: 480px) {
+
+    footer {
 
         padding: 1rem 0.5rem;
-        .conte_footer{
+
+        .conte_footer {
             grid-template-columns: 1fr;
             gap: 1em;
             padding: 1em;
             text-align: center;
-            
+
             .redes,
-            .ubicacion{
+            .ubicacion {
                 width: 100%;
                 margin: 0;
                 padding: 1em 0.5em;
             }
 
             .redes h3,
-            .ubicacion h3{
+            .ubicacion h3 {
                 font-size: 1.5rem;
             }
-            .redes li{
+
+            .redes li {
                 margin: 12px;
             }
-            .redes a{
+
+            .redes a {
                 font-size: 1.1rem;
             }
-            .ubicacion address{
+
+            .ubicacion address {
                 font-size: 1rem;
             }
-            .end_footer{
+
+            .end_footer {
                 margin-top: 22px;
                 flex-direction: column;
                 gap: 5px;
                 padding: 0.5em;
                 text-align: center;
             }
-            .footer_logo{
+
+            .footer_logo {
                 width: 180px;
             }
-            
+
         }
     }
 }
@@ -129,11 +145,12 @@ header {
 @media screen and (min-width: 768px) and (max-width: 900px) {
 
     .cont-inicio {
-        padding: 1.5rem; 
+        padding: 1.5rem;
 
-        .art-contenido{
+        .art-contenido {
             width: 100%;
         }
+
         .inicio_h1 {
             font-size: 2.2rem;
             padding: 1rem 0;
@@ -156,38 +173,25 @@ header {
             text-align: left;
             padding: 1rem;
         }
-        
-        
+
+
         .articulo-inicio {
             padding: 1rem;
-            display: flex; 
-            flex-direction: column; 
+            display: flex;
+            flex-direction: column;
             align-items: center;
 
-         
-            .col-md-7 {
-                width: 100%; 
-                margin-bottom: 1.5rem;
-            }
-            
-           
-            .col-md-9 {
-                width: 80%; 
-                margin-top: 1rem;
-            }
         }
-        
 
-        .row.align-items-center {
-            margin-bottom: 2rem;
+        .info_contenido {
+            width: 100%;
         }
-        
 
         .list {
             padding-left: 1.5rem;
             text-align: left;
         }
-        
+
         .list_li {
             font-size: 1.2rem;
             padding: 0.3rem 0;
@@ -195,7 +199,7 @@ header {
 
 
         .img_servicio {
-            width: 90%;
+            width: 100%;
             margin: 1.5rem auto;
 
             figure {
@@ -211,91 +215,107 @@ header {
 @media screen and (max-width: 767px) {
 
     .cont-inicio {
-        padding: 2rem; 
-        
-        // Títulos
+        padding: 2rem;
+
         .inicio_h1 {
-            font-size: 1.8rem; 
+            font-size: 1.8rem;
             padding: 1rem;
             text-align: center;
         }
 
         .h2_inicio {
-            font-size: 1.7rem; 
-            padding: 1rem 0;
+            font-size: 1.7rem;
+            padding: 1.5rem;
             text-align: center;
         }
 
-        .h3_inicio {
-            font-size: 1.3rem;
-            padding: 0.5rem;
-            text-align: center;
-        }
+        .art-contenido {
 
-        .parrafo_inicio {
-            font-size: 1.2rem;
-            padding: 1rem;
-            margin: 0; 
-            text-align: justify; 
-        }
+            padding: 1em;
+
+            .h3_inicio {
+                margin-top: 50px;
+                font-size: 1.3rem;
+                padding: 0rem;
+                text-align: center;
+            }
+
+            .parrafo_inicio {
+                font-size: 1.2rem;
+                padding: 1rem;
+                margin: 0;
+                text-align: center;
+            }
 
 
-        .articulo-inicio {
-            padding: 1rem 0; 
-            text-align: center;
-            align-items: center;
-        }
-        
-        // Imagen principal
-        .img--inicio {
-            .art_img {
-                width: 90%; 
-                margin: 0 auto; 
+            .articulo-inicio {
+                padding: 1rem 0;
+                text-align: center;
+                align-items: center;
+            }
 
-                img {
-                    width: 100%; 
-                    border-radius: 12px;
+            // Imagen principal
+            .img--inicio {
+                .art_img {
+                    width: 90%;
+                    margin: 0 auto;
+
+                    img {
+                        width: 100%;
+                        border-radius: 12px;
+                    }
                 }
             }
         }
 
-        
+
+
         .img_servicio {
-            width: 100%; 
+            width: 100%;
             padding: 1em 0;
-            
+
             figure {
                 width: 100%;
+
                 img {
                     width: 100%;
                     border-radius: 16px;
                 }
             }
         }
-        
+
         // Listas
         .list {
-            
-            padding-left: 1.5rem; 
+
+            padding-left: 1.5rem;
             text-align: left;
         }
 
         .list_li {
-            font-size: 1.2rem; 
-            padding: 0.3rem 0;
+            font-size: 1.2rem;
+            padding: 0.3rem;
         }
     }
 }
+
 // TABLETS DE SERVICIOS
-// Usamos el breakpoint de Bootstrap 'md' para una mejor compatibilidad.
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    
+
     .contenedor_s {
-        padding: 1.5rem; // Padding general para un mejor espaciado.
+        padding: 1.5rem;
 
         .intro_servicios {
-            width: 100%; // Ocupa todo el ancho.
-            padding: 1rem;
+            width: 100%;
+            padding: rem;
+
+            .c-img-servicios {
+                gap: 10px;
+                @include mixins.grid_columnas(1fr 1fr, center);
+
+                .img_servicios {
+                    width: 100%;
+                }
+            }
 
         }
 
@@ -303,15 +323,14 @@ header {
             padding: 1rem;
 
             .h3_servicio {
-                font-size: 2rem; // Aumentamos el tamaño de la fuente para tablets.
-                padding: 1.5rem 0;
+                font-size: 1.4rem;
+                padding: 1.5rem;
                 text-align: center;
             }
 
-            .parrafo_general1, .p_servicio {
-                font-size: 1.1rem; // Ajustamos el tamaño del párrafo.
-                text-align: justify;
-                padding: 0.5rem;
+            .parrafo_general1 {
+                margin: 0;
+
             }
 
             .p_servicio {
@@ -321,17 +340,20 @@ header {
             .cont_card {
 
                 @include mixins.grid_columnas_filas(1fr 1fr, auto auto, center, center);
-                gap: 18px ;
+                gap: 18px;
+
                 .card {
-                  width: 100%; // El ancho se ajusta automáticamente a la columna.
+                    width: 100%;
+                    text-align: center;
                     padding: 1rem;
-                    
+
                 }
             }
         }
 
         .metodologias {
-            padding: 1.3rem; // Padding para separar la sección.
+            padding: 1rem;
+            width: 100%;
 
             @include mixins.grid_columnas(1fr 1fr, center);
 
@@ -341,67 +363,68 @@ header {
         }
     }
 }
-//MOBILE DE SERVICIOS
-@media screen and (max-width: 767px){
 
-    .contenedor_s
-    {
-    
+//MOBILE DE SERVICIOS
+@media screen and (max-width: 767px) {
+
+    .contenedor_s {
+
         padding: 0em;
 
-            .intro_servicios
-            {
-                width: 96%;
-                padding: 1em;
+        .intro_servicios {
+            width: 96%;
+            padding: 1em;
 
-                .c-img-servicios{
-                    @include mixins.grid_columnas(1fr, center);
+            .c-img-servicios {
+                @include mixins.grid_columnas(1fr, center);
 
-                    .img_servicios{
-                        width: 100%;
+                .img_servicios {
+                    width: 100%;
 
-                    }
                 }
             }
+        }
 
-            .bloque_servicios{
-                width: 100%;
+        .bloque_servicios {
+            width: 100%;
+            padding: 0.5em;
+
+            .h3_servicio {
+
+                padding: 1rem;
+            }
+
+            .parrafo_general1 {
                 padding: 0.5em;
-
-                .h3_servicio{
-
-                    padding: 1rem;
-                }
-                .parrafo_general1{
-                    padding: 0.5em;
-                }
-                .p_servicio{
-                    padding: 1em;
-                    text-align: center;
-                }
-
-                    .cont_card
-                    {
-                        @include mixins.grid_columnas_filas(1fr,none,center,center);
-
-                            .card
-                            {
-                                width: 100%;
-                                padding: 1.2em;
-                                margin: 10px;
-                                
-                            }
-                    }
-
             }
-            .metodologias{
-                width: 97%;
+
+            .p_servicio {
                 padding: 1em;
-                @include mixins.grid_columnas(1fr, none);
-                .meto_info{
-                    padding: 1em;
+                text-align: center;
+            }
+
+            .cont_card {
+                @include mixins.grid_columnas_filas(1fr, none, center, center);
+
+                .card {
+                    width: 100%;
+                    padding: 1.2em;
+                    margin: 10px;
+
                 }
             }
+
+        }
+
+        .metodologias {
+            width: 97%;
+            padding: 1em;
+            @include mixins.grid_columnas(1fr, none);
+
+            .meto_info {
+                padding: 1em;
+            }
+        }
 
 
     }
@@ -409,58 +432,56 @@ header {
 
 
 
-
-// TABLETS DE NOSOTROS
-// Usamos el breakpoint de Bootstrap 'md' para mejor compatibilidad.
+//Diseño Tablets de nosotros.html
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
-    .contenedor_n {
-        padding: 1rem; // Aumentamos el padding para un mejor espaciado en tabletas.
-        
-        // Estilos generales para el texto
+    .contenedor_n 
+    {
+        padding: 1rem;
+
+
         .h2--general {
-            font-size: 2rem; // Aumentamos el tamaño de los títulos.
+            font-size: 2rem; 
             text-align: center;
         }
 
-        .parrafo_general2, .parrafo_nosotros {
-            font-size: 1.2rem; // Tamaño de fuente más grande para mejor lectura.
+        .parrafo_general2,
+        .parrafo_nosotros {
+            font-size: 1.2rem; 
             padding: 1rem 0;
             text-align: center;
         }
 
 
-        // Sección de tarjetas
+
         .cont_card {
             padding: 1.5rem;
-            // Aquí usamos tu mixin para crear un diseño de 2 columnas en tabletas.
             @include mixins.grid_columnas_filas(1fr, none, center, center);
-            gap: 1.5rem; // Espacio entre las tarjetas.
+            gap: 1.5rem; 
 
         }
 
-        // Sección de Misión y Visión
-        .cont_mision {
-            // Asumiendo que tu HTML tiene dos elementos, usamos Grid
-            // para colocarlos uno al lado del otro.
+
+        .cont_mision 
+        {
             @include mixins.grid_columnas(1fr, center);
             gap: 2rem;
             padding: 1rem;
-            .art_mision{
+
+            .art_mision {
                 width: 100%;
                 padding: 2rem;
                 text-align: center;
             }
         }
-        
-        // Sección del equipo
-        .cont_equipo {
+
+        .cont_equipo 
+        {
             width: 100%;
             padding: 1rem;
 
-            .cont_art_img {
-                // Si esta sección contiene una imagen y texto, este es el lugar
-                // para crear un diseño de dos columnas.
+            .cont_art_img 
+            {
                 @include mixins.grid_columnas(1fr 1fr, center);
                 gap: 1.5rem;
                 padding: 1rem;
@@ -473,119 +494,168 @@ header {
     }
 }
 
-//MOBILE DE NOSOTROS
+//DISEÑO MOBILE DE NOSOTROS
 @media screen and (max-width: 767px) {
 
-    .contenedor_n
+    .contenedor_n 
     {
         width: 100%;
         padding: 1em;
 
 
-            .h2--general{
-                width: 100%;
-                text-align: center;
-            }
-            .parrafo_general2{
-                text-align: center;
-                padding: 1em;
-                font-size: 1.1rem;
-            }
-            .parrafo_nosotros{
-                text-align: center;
-                padding: 0.5em;
-                font-size: 1.1rem;
-            }
+        .h2--general {
+            width: 100%;
+            text-align: center;
+        }
 
-            .n_info{
-                width: 100%;
+        .parrafo_general2 {
+            text-align: center;
+            padding: 1em;
+            font-size: 1.1rem;
+        }
+
+        .parrafo_nosotros {
+            text-align: center;
+            padding: 0.5em;
+            font-size: 1.1rem;
+        }
+
+        .n_info 
+        {
+            width: 100%;
+            padding: 1rem;
+
+            .art_ninfo {
                 padding: 1rem;
 
-                    .art_ninfo{
-                        padding: 1rem;
-
-                    }
             }
-            .cont_card{
-                padding: 0.5em;
-                @include mixins.grid_columnas_filas(1fr, none ,center,center);
-            }
-            .cont_mision{
-                @include mixins.grid_columnas(1fr,center);
-            }
-            
+        }
 
-            .cont_equipo
-            {
-                width: 100%;
-                padding: 0.5em;
+        .cont_card {
+            padding: 0.5em;
+            @include mixins.grid_columnas_filas(1fr, none, center, center);
+        }
 
-                .cont_art_img
-                {
-                    @include mixins.grid_columnas(1fr,center);
-                    gap: 0px;
+        .cont_mision {
+            @include mixins.grid_columnas(1fr, center);
+        }
 
-                    .img_equipo{
-                        width: 100%;
-                    }
+
+        .cont_equipo 
+        {
+            width: 100%;
+            padding: 0.5em;
+
+            .cont_art_img {
+                @include mixins.grid_columnas(1fr, center);
+                gap: 0px;
+
+                .img_equipo {
+                    width: 100%;
                 }
             }
+        }
+    }
+}
+
+//DISEÑO TABLETS DE CLIENTES
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    .contenedor_c{
+
+        width: 100%;
+        padding: 2em;
+
+        .contenedor-clientes{
+            
+            .h2--general{
+            font-size: 1.5rem;
+            }
+            .parrafo_cliente{
+            text-align: center;
+            }
+        }
+        
+
     }
 }
 
 //MOBILE DE CLIENTE 
-@media screen and (min-width: 430px) and (max-width: 729px){
-    .contenedor_c{
+@media screen and (max-width: 767px) {
+    .contenedor_c 
+    {
         padding: 2em;
 
-        .h2--general{
+        .h2--general {
             font-size: 1.4rem;
             text-align: center;
         }
-        .h2_clientes{
+
+        .h2_clientes {
             text-align: center;
         }
-        .parrafo_cliente{
+
+        .parrafo_cliente {
             text-align: center;
         }
-        .contenedor-clientes{
+
+        .contenedor-clientes {
             padding: 1em;
         }
     }
 }
 
 
+//DISEÑO TABLETS DE CONTACTO
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .cont_contact
+    {
+        padding: 2em;
 
-//MOBILE DE CONTACTO----------------------------------------------------------
-@media screen and (min-width: 430px) and (max-width: 729px) {
-
-     .cont_contact
-     {
-        padding: 1em;
-            
-            .parrafo_contacto{
-                padding: 0.7em;
-                font-size: 1.1rem;
+        .parrafo_contacto{
+            padding: 0.5em;
+            font-size: 1.2rem;
+        }
+        .cont-beneficios-form
+        {
+            padding: 1em;
+            .h2_contacto{
+                padding: 1em;
+                font-size: 1.7rem;
+                text-align: center;
             }
-            .cont-beneficios-form
-            {
+        }
+    }
+}
+//MOBILE DE CONTACTO----------------------------------------------------------
+@media screen and (max-width: 767px) {
+
+    .cont_contact 
+    {
+        padding: 1em;
+
+        .parrafo_contacto {
+            padding: 0.7em;
+            font-size: 1.1rem;
+        }
+
+        .cont-beneficios-form {
+            padding: 0em;
+
+            .beneficios_contacto {
                 padding: 0em;
 
-                .beneficios_contacto
-                {
-                    padding: 0em;
-
-                    .h2_contacto{
-                        padding: 1em;
-                        text-align: center;
-                    }
-                }
-
-                .cont-formulario{
+                .h2_contacto {
                     padding: 1em;
-                    margin-bottom: 22px;
+                    text-align: center;
                 }
-
             }
-     }
+
+            .cont-formulario {
+                padding: 1em;
+                margin-bottom: 22px;
+            }
+
+        }
+    }
 }
