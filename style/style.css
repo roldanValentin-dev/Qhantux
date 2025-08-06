@@ -505,6 +505,7 @@ footer .end_footer .footer_logo img {
 }
 
 .cont_contact {
+  width: 100%;
   background-color: rgb(196, 255, 173);
   padding: 3em;
   border: 2px solid black;
@@ -529,15 +530,13 @@ footer .end_footer .footer_logo img {
   width: 100%;
   padding: 1em;
 }
-.cont_contact .cont-beneficios-form .cont-formulario {
-  justify-items: center;
-}
 .cont_contact .cont-beneficios-form .cont-formulario .formulario_contacto {
   border: 2px solid black;
   width: 100%;
   border-radius: 22px;
   color: rgb(0, 0, 0);
   box-shadow: 0px 5px 10px black;
+  margin-left: 10px;
 }
 .cont_contact .cont-beneficios-form .cont-formulario .formulario_contacto .cont-boton-form {
   text-align: center;
@@ -1037,7 +1036,6 @@ footer .end_footer .footer_logo img {
   }
   .cont_contact .cont-beneficios-form .cont-formulario {
     padding: 1em;
-    margin-bottom: 22px;
   }
 }
 
