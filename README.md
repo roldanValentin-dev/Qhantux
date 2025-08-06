@@ -43,6 +43,6 @@ Flujo de Trabajo con Sass: Aprender a usar un preprocesador para escribir CSS de
 Ver el Proyecto en Línea
 Puedes visitar el sitio web de Qhantux desplegado a través de GitHub Pages en el siguiente enlace:
 
-[Enlace a tu sitio web aquí]
+https://roldanvalentin-dev.github.io/Qhantux/
 
-(No olvides reemplazar el texto entre corchetes con el enlace real a tu proyecto en GitHub Pages).
+
